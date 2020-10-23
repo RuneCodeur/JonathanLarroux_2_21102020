@@ -1,0 +1,19 @@
+@font-face 
+{
+	font-family: raleway;
+	src : url('typo/raleway.woff') format('woff'),
+		url('typo/raleway.otf') format('otf'),
+		url('typo/raleway.ttf') format('ttf'),
+		url('typo/raleway.svg') format('svg');
+}
+
+*
+{
+	font-family: raleway,Verdana, Arial;
+}
+
+}
+body
+{
+	background-color: #f2f2f2
+}

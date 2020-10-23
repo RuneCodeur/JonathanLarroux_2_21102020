@@ -14,7 +14,7 @@
 	<nav>
 		<a href="#hebergement">Hébergements</a>
 		<a href="#activites">Activités</a>
-		<a href ="lien.html">s'inscrire</a>
+		<a href ="lien.html">S'inscrire</a>
 	</nav>
 </header>
 
@@ -27,7 +27,9 @@
 		<form method="post" action="traitement.php">
 			<label for="pseudo"> <img src="icon/lieu.svg" height="25cm" alt="lieu"></label>
 				<input type="search" name="adresse" placeholder="Marseille,France">
-				<input type="submit" value="rechercher"><br/>
+				<input type="submit" value="rechercher">
+				<input type="image" src="icon/search.svg" height="50cm"><br/>
+				
 			<label for="pseudo">Filtres</label>
 				<input type="checkbox" name="Filtres"/><label for="eco"><img src="icon/eco.svg" height="50cm" alt="eco">économique</label>
 				<input type="checkbox" name="Filtres"/><label for="fam"><img src="icon/guy.svg" height="50cm" alt="guy">Familial</label>
@@ -39,7 +41,7 @@
 </section>
 
 <section>
-	<h2>Hébergement à marseille</h2>
+	<h2><a id="hebergement">Hébergement à marseille</a></h2>
 
 	<a href ="image/large/cannebiere.jpg"><div>
 		<img src="image/small/cannebiere.jpg" height="150cm" alt="Auberge la Cannebière"/>
@@ -151,7 +153,7 @@
 </section>
 
 <section>
-	<h2>Activité à Marseille</h2>
+	<h2><a id="activites">Activité à Marseille</a></h2>
 	<a href ="image/large/vieux_p.jpg">
 		<div>
 		<img src="image/small/vieux_p.jpg" height="150cm" alt="Vieux Port"/>

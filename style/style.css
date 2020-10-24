@@ -12,8 +12,44 @@
 	font-family: raleway,Verdana, Arial;
 }
 
-}
 body
 {
-	background-color: #f2f2f2
+	background-color: #f2f2f2;
+	margin: auto;
+	width: 90%;
+}
+
+header
+{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 150px;
+}
+
+header nav
+{
+	display: flex;
+	flex: 1;
+}
+
+#list a
+{
+
+	border-top: 3px #f2f2f2 solid;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	min-width: 150px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+#list a:hover
+{
+	color: #0065fc;
+	border-top: 3px #0065fc solid;
 }

@@ -7,18 +7,29 @@
 		url('typo/raleway.svg') format('svg');
 }
 
+@font-face 
+{
+font-family: raleway-gras;
+	src : url('typo/raleway-gras.woff') format('woff'),
+		url('typo/raleway-gras.otf') format('otf'),
+		url('typo/raleway-gras.ttf') format('ttf'),
+		url('typo/raleway-gras.svg') format('svg');
+}
+
 *
 {
-	font-family: raleway,Verdana, Arial;
+	font-family: raleway, Verdana, Arial;
+	color: black;
 }
 
 body
 {
 	background-color: #f2f2f2;
 	margin: auto;
-	width: 90%;
+	width: 92%;
 }
 
+/*tete */
 header
 {
 	
@@ -43,13 +54,106 @@ header nav
 	justify-content: center;
 	align-items: center;
 	height: 150px;
-	min-width: 150px;
+	width: 175px;
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
+	font-size: large;
 }
+
 #list a:hover
 {
 	color: #0065fc;
 	border-top: 3px #0065fc solid;
+}
+
+.inscrire
+{
+	font-family: raleway-gras;
+	color: #0065fc;
+}
+
+/* barre de recherche*/
+
+h1
+{
+	font-family: raleway-gras;
+	font-size: 175%
+}
+
+section p
+{
+	font-size: 125%;
+}
+
+fieldset,fieldset div
+{
+	display: flex;
+	align-items: center;
+	border: none;
+
+}
+input[type='search'], input[type='submit']
+{
+	border: none;
+	color: black;
+	height: 55px;
+	min-width: 275px;
+	font-family: raleway;
+	font-weight: bold;
+	font-size: 125%;
+	margin-left: 25px;
+}
+input[type='search'], input[type='submit']:focus
+{
+	outline: none;
+}
+
+input[type='submit']
+{
+	background-color: #0065fc;
+	border-radius: 0 15px 15px 0;
+	min-width: 150px;
+	color: white;
+}
+
+input[type='image']
+{
+	display: none;
+}
+/*filtres*/
+
+label
+{
+	border: 3px red solid;
+	height: 50px;
+}
+
+input[type="checkbox"]
+{
+	display: none;
+}
+ input[type="checkbox"]+label::before
+{
+	content: "économique";
+	font-family: raleway-gras;
+	display: block;
+	text-align: right;
+	width: 110px;
+    height: 50px;
+    padding: 0px 15px;
+    margin-right: 50px;
+    background-color: grey;
+    border-radius:0px 50px 50px 0px;
+    
+}
+ input[type="checkbox"]:checked+label::before
+{
+	color:white;
+    background-color: #0065fc;
+}
+label img
+{
+	position: relative;
+	bottom: 50px;
+	right:25px;
 }

@@ -90,7 +90,6 @@ fieldset,fieldset div
 	display: flex;
 	align-items: center;
 	border: none;
-
 }
 input[type='search'], input[type='submit']
 {
@@ -122,38 +121,66 @@ input[type='image']
 }
 /*filtres*/
 
-label
+.filtre
 {
-	border: 3px red solid;
-	height: 50px;
+	
+	width: 60%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-weight: bold;
+	font-size: x-large;
+}
+label[class="checkbox"]
+{
+	height: 60px;
+	margin: 30px 90px 0px 0px;
 }
 
-input[type="checkbox"]
+.checkbox input
 {
 	display: none;
 }
- input[type="checkbox"]+label::before
+
+.eco, .guy, .heart, .dog
 {
-	content: "économique";
-	font-family: raleway-gras;
-	display: block;
-	text-align: right;
-	width: 110px;
-    height: 50px;
-    padding: 0px 15px;
-    margin-right: 50px;
-    background-color: grey;
-    border-radius:0px 50px 50px 0px;
-    
+	display: inline-block;
+	position: absolute;
+	vertical-align: middle;
+	width: 220px; 
+	height: 60px;
+    background-color: white;
+    border-radius:50px;
+    box-shadow: 1px 0px 2px;
 }
- input[type="checkbox"]:checked+label::before
+#text
 {
-	color:white;
-    background-color: #0065fc;
-}
-label img
-{
+	display: inline-block;
 	position: relative;
-	bottom: 50px;
-	right:25px;
+	font-size: x-large;
+	vertical-align: middle;
+	font-weight: bold;
+	color: black;
+	left: 70px; 
+	top: 12px;
+}
+.guy
+{
+	width: 170px;
+}
+
+.dog
+{
+	width: 290px;
+}
+
+
+input:checked + #circle + #text
+{
+    color: #f2f2f2;
+
+}
+input:checked + #circle
+{
+	background-color: #0065fc;
+    box-shadow: 1px 0px 2px;
 }

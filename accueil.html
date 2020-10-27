@@ -30,14 +30,34 @@
 				<label for="vacance"> <img src="icon/lieu.svg" height="25cm" alt="lieu"></label>
 				<input type="search" name="adresse" value="Marseille,France">
 				<input type="submit" value="Rechercher">
-				<input type="image" src="icon/search.svg" height="50cm"><br/>
+				<input type="image" src="icon/search.svg" height="60cm"><br/>
 			</div>
-			<div>
-				<label class="filtre" for="vacance">Filtres</label>
-				<input type="checkbox" name="Filtres" id="eco" /><label for="eco"><img src="icon/eco.svg" height="50cm" alt="eco"></label>
-				<input type="checkbox" name="Filtres" id="fam" /><label for="fam"><img src="icon/guy.svg" height="50cm" alt="guy"></label>
-				<input type="checkbox" name="Filtres" id="rom" /><label for="rom"><img src="icon/heart.svg" height="50cm" alt="heart"></label>
-				<input type="checkbox" name="Filtres" id="ani" /><label for="ani"><img src="icon/dog.svg" height="50cm" alt="dog"></label>
+			<div class="filtre">
+				<label for="vacance">Filtres</label>
+
+					<label for="eco" class="checkbox">
+						<input type="checkbox" id="eco" class="checkbox">
+						<span class="eco" id="circle" >
+							<img src="icon/eco.svg" height="60cm" alt="eco">
+						</span>
+						<span id="text">Économique</span>
+					</label>
+
+					<label for="guy" class="checkbox">
+						<input type="checkbox" id="guy" class="checkbox">
+						<span class="guy" id="circle">
+						<img src="icon/guy.svg" height="60cm" alt="guy"></span><span id="text">Familial</span>
+					</label>
+					<label for="heart" class="checkbox">
+						<input type="checkbox" id="heart" class="checkbox">
+						<span class="heart" id="circle">
+						<img src="icon/heart.svg" height="60cm" alt="heart"></span><span id="text">Romantique</span>
+					</label>
+					<label for="dog" class="checkbox">
+						<input type="checkbox" id="dog" class="checkbox">
+						<span class="dog" id="circle">
+						<img src="icon/dog.svg" height="60cm" alt="dog"></span><span id="text">Animaux autorisés</span>
+					</label>
 			</div>
 		</fieldset>
 		<q><a href=" lien.html"><img src="icon/info.svg" height="30cm" alt="info"></a>Plus de 500 logements sont disponibles dans cette ville</q>

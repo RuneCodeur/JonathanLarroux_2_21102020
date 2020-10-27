@@ -123,64 +123,73 @@ input[type='image']
 
 .filtre
 {
-	
-	width: 60%;
+	width: 100%;
+	display: block;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	font-weight: bold;
 	font-size: x-large;
 }
-label[class="checkbox"]
+label
 {
-	height: 60px;
-	margin: 30px 90px 0px 0px;
+	font-family: raleway-gras;
 }
-
 .checkbox input
 {
+
 	display: none;
 }
+.switch
+{
+	border-radius: 60px;
+	display: inline-block;
+	height: 60px;
+	position: relative; 
+	margin: 25px 10px;
+	box-shadow: 1px 0px 2px black;
+}
 
-.eco, .guy, .heart, .dog
+.switch span
 {
 	display: inline-block;
-	position: absolute;
+	position: relative;
 	vertical-align: middle;
-	width: 220px; 
-	height: 60px;
-    background-color: white;
-    border-radius:50px;
-    box-shadow: 1px 0px 2px;
+
+}
+#circle
+{
+	display: inline-block;
+	border-radius: 60px;
+	z-index:1;
 }
 #text
 {
 	display: inline-block;
+	font-family: raleway-gras;
 	position: relative;
-	font-size: x-large;
-	vertical-align: middle;
-	font-weight: bold;
-	color: black;
-	left: 70px; 
-	top: 12px;
+	margin-right: 20px;
+	z-index: 1;
+	transition-duration: 0.2s;
 }
-.guy
+#imblue
 {
-	width: 170px;
-}
-
-.dog
-{
-	width: 290px;
-}
-
-
-input:checked + #circle + #text
-{
-    color: #f2f2f2;
-
-}
-input:checked + #circle
-{
+	display: inline-block;
+	position: absolute;
+	float: right;
+	top:0px;
+	width: 60px; height: 60px;
+	border-radius: 60px;
 	background-color: #0065fc;
-    box-shadow: 1px 0px 2px;
+	transition-duration: 0.2s;
+}
+
+input:checked + .switch #text
+{
+	color: #f2f2f2;
+}
+
+input:checked + .switch #imblue
+{
+
+	width: 100%;
 }

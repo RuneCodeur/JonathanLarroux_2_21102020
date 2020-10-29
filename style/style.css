@@ -22,6 +22,16 @@ font-family: raleway-gras;
 	color: black;
 }
 
+h3
+{
+	font-family: raleway-gras;
+	color: black;
+	font-size: large;
+}
+a
+{
+	text-decoration: none;
+}
 body
 {
 	background-color: #f2f2f2;
@@ -56,7 +66,6 @@ header nav
 	height: 150px;
 	width: 175px;
 	text-decoration: none;
-	font-weight: bold;
 	font-size: large;
 }
 
@@ -74,7 +83,7 @@ header nav
 
 /* barre de recherche*/
 
-h1
+h1, h2
 {
 	font-family: raleway-gras;
 	font-size: 175%
@@ -146,7 +155,7 @@ label
 	height: 60px;
 	position: relative; 
 	margin: 25px 10px;
-	box-shadow: 1px 0px 2px black;
+	box-shadow: 0px 0px 7px grey;
 }
 
 .switch span
@@ -193,3 +202,119 @@ input:checked + .switch #imblue
 
 	width: 100%;
 }
+
+/*les lieux*/
+.lieu /*heberegement + populaire*/
+{
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+.hebergement/*la case hebergement*/
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	padding-top: 60px;
+	justify-content: space-between;
+}
+
+#titre
+{
+	height: auto;
+	display: block;
+	flex-direction: column;
+	position: absolute;
+}
+.lieu #case a /*les boites*/
+{
+	width: 300px; height: 250px;
+	border-radius: 25px; 
+	position: relative;
+	display: block;
+	padding: 10px 10px;
+	margin: 20px 10px;
+	box-shadow: 0px 0px 7px grey;
+}
+#note/*le bordel dans la boite*/
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+#case h3,#case p 
+{
+	margin: 5px 0;
+}
+
+.lieu #photo /*l'image dans la boite*/
+{
+	height: 150px; width: 300px;
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	overflow: hidden;
+	border-radius: 25px 25px 0px 0px; 
+}
+#picture
+{
+	width: 300px;
+	position: absolute;
+	top: -10px;
+	bottom: -10px;
+}
+#picture img
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	margin:auto;
+}
+/*pop*/
+
+.pop /*la case pop*/
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	 
+}
+#popul
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	height: 50px;
+}
+
+.pop #case a
+{
+	
+	width: 400px;
+	height: 140px;
+	display: flex;
+}
+.pop #photo
+{
+	height: 140px; width: 125px;
+	border-radius: 25px 0 0 25px;
+}
+
+.pop #note
+{
+	margin-left: 15px;
+	width: 200px;
+}
+.pop #star
+{
+	margin-top: 25px;
+}
+/*les activite*/
+
+/*footer*/

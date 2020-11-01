@@ -82,11 +82,12 @@ h1, h2{
 section p{
 	font-size: 125%;
 }
-
-fieldset,fieldset div{
-	display: flex;
-	align-items: center;
+fieldset{
 	border: none;
+}
+.cherche{
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 input[type='search'], input[type='submit']{
@@ -135,7 +136,7 @@ label{
 	display: none;
 }
 
-.switch{
+.switch{ /*partie blanche des boutons*/
 	border-radius: 60px;
 	display: inline-block;
 	height: 60px;
@@ -144,35 +145,34 @@ label{
 	box-shadow: 0px 0px 7px grey;
 }
 
-.switch span{
+.switch span{ /*l'alignement du texte*/
+	vertical-align: middle;
+}
+
+#circle{ /*l'image associé au bouton*/
 	display: inline-block;
 	position: relative;
-	vertical-align: middle;
-
-}
-
-#circle{
-	display: inline-block;
 	border-radius: 60px;
-	z-index:1;
+	z-index:3;
 }
 
-#text{
+#text{ /*texte dans les boutons*/
 	display: inline-block;
 	font-family: raleway-gras;
 	position: relative;
 	margin-right: 20px;
-	z-index: 1;
+	z-index: 2;
 	transition-duration: 0.2s;
 }
 
-#imblue{
+#imblue{ /*partie bleu des boutons*/
+
 	display: inline-block;
 	position: absolute;
-	float: right;
-	top:0px;
+	left: 0;
 	width: 60px; height: 60px;
 	border-radius: 60px;
+	z-index: 1;
 	background-color: #0065fc;
 	transition-duration: 0.2s;
 }
@@ -194,7 +194,7 @@ input:checked + .switch #imblue{
 	justify-content: space-between;
 }
 
-.hebergement{
+#hebergement{
 
 	display: flex;
 	flex-wrap: wrap;
@@ -230,28 +230,11 @@ input:checked + .switch #imblue{
 	margin: 5px 0;
 }
 
-.lieu #photo{ /*l'image dans la boite*/
-	height: 150px; width: 300px;
-	display: block;
-	position: relative;
-	vertical-align: middle;
-	overflow: hidden;
-	border-radius: 25px 25px 0px 0px; 
-}
-
-#picture{
+.pict{ /*la photo*/
 	width: 300px;
-	position: absolute;
-	top: -10px;
-	bottom: -10px;
-}
-
-#picture img{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	margin:auto;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 25px 25px 0px 0px; 
 }
 
 /*pop*/
@@ -273,25 +256,15 @@ input:checked + .switch #imblue{
 }
 
 .pop #case a{ /*la boite*/
-	
 	width: 400px;
 	height: 140px;
 	display: flex;
 	align-items: center;
 }
 
-.pop #photo{ /*le cadre du cadre de la photo*/
-
-	border: 3px red solid;
-
-	height: 140px; width: 125px;
+.pop .pict { /*image*/
+	width: 150px;height: 140px;
 	border-radius: 25px 0 0 25px;
-}
-
-.pop #picture{ /*le cadre de la photo*/
-}
-
-.pop #picture img{ /*la photo*/
 }
 
 .pop #note{ /* texte*/
@@ -306,10 +279,7 @@ input:checked + .switch #imblue{
 /*les activite*/
 
 
-.activites{
-
-	border: 3px blue solid;
-
+#activites{ /*la boite complete*/
 	display: flex;
 	flex-direction:column;
 }
@@ -324,43 +294,15 @@ input:checked + .switch #imblue{
 }
 
 .activites a{ /*la boite*/
-
-	border: 3px red solid;
-
-	
-	width: 350px;
 	margin: 10px 25px;
 }
 
-#acti{ /* dans la boite*/
-	border: 3px red solid;
+#littlebox img{
+	height: 150px; width: 350px;
 }
-
-.activites div h3{
-margin-left: 20px;
-height: 25px;
+#bigbox img{
+	height: 400px; width: 350px;
 }
-
-#bigbox{ /*le cadre du cadre de la photo*/
-	border-radius: 25px 25px 0px 0px; 
-	height: 400px;
-	overflow: hidden;
-}
-
-#littlebox{
-	border-radius: 25px 25px 0px 0px; 
-	height: 150px;
-	overflow: hidden;
-}
-
-.activites a #vue{ /*le cadre de la photo*/
-text-align: center;
-}
-
-.activites a img{ /*la photo*/
-height: 350px;
-}
-
 /*footer*/
 
 footer{

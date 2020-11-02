@@ -36,6 +36,7 @@ body{
 }
 
 /*tete */
+
 header{
 	
 	display: flex;
@@ -55,7 +56,7 @@ nav img{
 	justify-content: flex-end;
 }
 #list a{
-	border-top: 3px #f2f2f2 solid;
+	border-top: 4px #f2f2f2 solid;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,7 +68,7 @@ nav img{
 
 #list a:hover{
 	color: #0065fc;
-	border-top: 3px #0065fc solid;
+	border-top: 4px #0065fc solid;
 }
 
 .inscrire{
@@ -77,20 +78,24 @@ nav img{
 
 /* barre de recherche*/
 
-h1, h2{					/*resposive en cours*/
+h1, h2{					
 	font-family: raleway-gras;
-	font-size: 175%
+	font-size: 155%
 }
 
 section p{
-	font-size: 125%;
+	font-size: 120%;
 }
 fieldset{
 	border: none;
 }
+
 .cherche{
-	flex-direction: column;
-	align-items: flex-start;
+	display: flex;
+}
+
+.loupe{
+	margin-top: 10px;
 }
 
 input[type='search'], input[type='submit']{
@@ -121,13 +126,13 @@ input[type='image']{
 
 /*filtres*/
 
-.filtre{
+.filtre{  
 	width: 100%;
 	display: block;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	font-weight: bold;
-	font-size: x-large;
+	font-size: large;
 }
 
 label{
@@ -135,7 +140,6 @@ label{
 }
 
 .checkbox input{
-
 	display: none;
 }
 
@@ -144,7 +148,7 @@ label{
 	display: inline-block;
 	height: 60px;
 	position: relative; 
-	margin: 25px 10px;
+	margin: 10px 10px;
 	box-shadow: 0px 0px 7px grey;
 }
 
@@ -162,6 +166,7 @@ label{
 #text{ /*texte dans les boutons*/
 	display: inline-block;
 	font-family: raleway-gras;
+
 	position: relative;
 	margin-right: 20px;
 	z-index: 2;
@@ -169,7 +174,6 @@ label{
 }
 
 #imblue{ /*partie bleu des boutons*/
-
 	display: inline-block;
 	position: absolute;
 	left: 0;
@@ -185,13 +189,21 @@ input:checked + .switch #text{
 }
 
 input:checked + .switch #imblue{
-
 	width: 100%;
+}
+form p{
+	display: flex;
+	font-size: large;
+}
+form p img{
+	position: relative;
+	top: -5px;
+	margin-right: 5px;
 }
 
 /*les lieux*/
 
-.lieu {
+.lieu { /*resposive en cours*/
 	display: flex;
 	margin-top: 50px;
 	justify-content: space-between;
@@ -327,6 +339,9 @@ div ul li{
 	margin-top: 20px;
 }
 /**** responsive format tablette****/
+@media screen and (max-width: 979px){
+	
+}
 /****responsive format mobile****/
 
 @media screen and (max-width: 480px){
@@ -344,7 +359,7 @@ div ul li{
 	}
 
 	.heberge, .act{
-		border-bottom: 3px #f2f2f2 solid;
+		border-bottom: 4px #f2f2f2 solid;
 	}
 
 	#list{
@@ -371,8 +386,27 @@ div ul li{
 	#list a:hover{
 		border-top: none;
 	}
+
 	.heberge:hover, .act:hover{
 
-		border-bottom: 3px #0065fc solid;
+		border-bottom: 4px #0065fc solid;
+	}
+	
+	section h1, section p{
+		margin-left: 15px;
+		width: 85%;
+	}
+
+	input[type='submit']{
+		display: none;
+	}
+
+	input[type='image']{
+		display: block;
+	}
+
+	.cherche{
+		width: 100%;
+		justify-content: space-between;
 	}
 }

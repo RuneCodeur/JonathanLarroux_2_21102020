@@ -19,7 +19,7 @@ font-family: raleway-gras;
 	color: black;
 }
 
-h3{
+h3{			
 	font-family: raleway-gras;
 	color: black;
 	font-size: large;
@@ -78,7 +78,7 @@ nav img{
 
 /* barre de recherche*/
 
-h1, h2{					
+h1, h2{
 	font-family: raleway-gras;
 	font-size: 155%
 }
@@ -166,7 +166,6 @@ label{
 #text{ /*texte dans les boutons*/
 	display: inline-block;
 	font-family: raleway-gras;
-
 	position: relative;
 	margin-right: 20px;
 	z-index: 2;
@@ -210,15 +209,18 @@ form p img{
 }
 
 #hebergement{
+	flex-direction: column;
+	width: 66%;
+	padding: 60px 0;
+}
+
+#chambre{
 	display: flex;
 	flex-wrap: wrap;
-	width: 66%;
-	padding-top: 60px;
 	justify-content: space-between;
 }
 
 #titre{
-	position: absolute;
 	margin-top: -60px;
 }
 
@@ -247,6 +249,8 @@ form p img{
 	height: 150px;
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px; 
+}
+#unpeuplus{
 }
 
 /*pop*/
@@ -317,7 +321,7 @@ form p img{
 }
 /*footer*/
 
-footer{
+footer{ /***********responsive en cours*******************/
 	display: flex;
 }
 
@@ -423,5 +427,50 @@ div ul li{
 	}
 	.pict{
 		width: 400px;
+	}
+
+	#title{
+		margin-left: 20px;
+	}
+
+	 #typeacti{
+		width: auto;
+		align-items: center;
+		height: auto;
+	}
+	#typeacti a{
+		margin-bottom: 30px;
+	}
+
+	#littlebox img, #bigbox img{
+		width: 400px;
+		height: 150px;
+	}
+	#resume{
+		margin-left: 20px;
+	}
+
+	footer{
+		
+		display: block;
+		margin-top: 50px;
+		margin-left: 20px;
+		}
+
+	footer div{
+		width: 400px;
+		padding-bottom: 40px;
+		/*flex-direction: column;
+		margin-right: 250px;
+	}
+
+	div ul{
+		padding-left: 0px;
+	}
+
+	div ul li{
+		list-style-type: none;
+		font-size: x-large;
+		margin-top: 20px;
 	}
 }

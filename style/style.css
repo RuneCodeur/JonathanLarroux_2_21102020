@@ -84,7 +84,7 @@ h1, h2{
 }
 
 section p{
-	font-size: 120%;
+	font-size: 110%;
 }
 fieldset{
 	border: none;
@@ -203,26 +203,23 @@ form p img{
 
 /*les lieux*/
 
-.lieu { /*resposive en cours*/
+.lieu { 
 	display: flex;
 	margin-top: 50px;
 	justify-content: space-between;
 }
 
 #hebergement{
-
 	display: flex;
 	flex-wrap: wrap;
-	width: 60%;
+	width: 66%;
 	padding-top: 60px;
 	justify-content: space-between;
 }
 
 #titre{
-	height: auto;
-	display: block;
-	flex-direction: column;
 	position: absolute;
+	margin-top: -60px;
 }
 
 .lieu #case a {/*les boites*/
@@ -272,13 +269,13 @@ form p img{
 
 .pop #case a{ /*la boite*/
 	width: 400px;
-	height: 140px;
+	height: 170px;
 	display: flex;
 	align-items: center;
 }
 
 .pop .pict { /*image*/
-	width: 150px;height: 140px;
+	width: 150px;height: 170px;
 	border-radius: 25px 0 0 25px;
 }
 
@@ -288,7 +285,7 @@ form p img{
 }
 
 .pop #star{ /*les etoiles*/
-	margin-top: 25px;
+	margin-top: 60px;
 }
 
 /*les activite*/
@@ -408,5 +405,23 @@ div ul li{
 	.cherche{
 		width: 100%;
 		justify-content: space-between;
+	}
+	.lieu{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	#hebergement{
+		display: block;
+		width: auto;
+	}
+	#hebergement  #case a{
+		display: inline; 
+		padding: 5px 50px;
+		margin: 0px;
+		box-shadow: 0px 0px 0px ;
+	}
+	.pict{
+		width: 400px;
 	}
 }

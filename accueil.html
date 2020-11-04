@@ -9,12 +9,13 @@
 <body>
 
 <header>
-	<nav>	
-		<img src="image/logo.svg" height="60cm" alt="Reservia"/>
-		<nav></nav>
+	<nav id="entete">	
+		<nav><img src="image/logo.svg" height="60cm" alt="Reservia"/></nav>
 		<nav id="list">
-			<a href="#hebergement" class="heberge">Hébergements</a>
-			<a href="#activites" class="act">Activités</a>
+			<div>
+				<a href="#hebergement" class="heberge">Hébergements</a>
+				<a href="#activites" class="act">Activités</a>
+			</div>
 			<a href ="lien.html" class="inscrire">S'inscrire</a>
 		</nav>
 	</nav>
@@ -77,11 +78,11 @@
 		<p><a href=" lien.html"><img src="icon/info.svg" height="30cm" alt="info"></a>Plus de 500 logements sont disponibles dans cette ville</p>
 	</form>
 </section>
+
 <section class="lieu">
-	
-	
 	<section id="hebergement">
-		<div id="titre"><h2>Hébergement à marseille</h2> </div><div id="chambre">
+		<div id="titre"><h2>Hébergement à marseille</h2></div>
+		<div id="chambre">
 			<div id="case"><a href ="image/large/cannebiere.jpg">
 				<div ><img class="pict" src="image/small/cannebiere.jpg" alt="Auberge la Cannebière"/>
 				</div>
@@ -182,7 +183,7 @@
 					</div>
 				</div>
 			</a></div></div>
-			<div><a href ="accueil.html"><h3>Afficher plus</h3></a></div>
+			<div id="unpeuplus"><a href ="accueil.html"><h3>Afficher plus</h3></a></div>
 	</section>
 
 
@@ -190,7 +191,7 @@
 	<section class="pop">
 		<div id="popul"><h2>Les plus populaires</h2>
 		<a href ="accueil.html"><img src="icon/more.svg" height="25cm" alt="plus"/></a></div>
-
+		<div id="beau">
 		<div id="case"><a href ="image/large/soleil_matin.jpg">
 			<div>
 				<img class="pict" src="image/small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
@@ -242,48 +243,54 @@
 				</div>
 			</div>
 		</a></div>
+	</div>
 	</section>
 </section>
 <section id="activites">
 	<div id="title"><h2> Activité à Marseille</h2></div>
 	<div id="typeacti">
 
-		<a href ="image/large/vieux_p.jpg">
-			<div id="bigbox">
-			<img class="pict vue" src="image/small/vieux_p.jpg" alt="Vieux Port"/></div>
-			<div id="resume"><h3>Vieux Port</h3></div>
-		</a>
-		
-		<a href ="image/large/fort.jpg">
-			<div id="littlebox">
-			<img class="pict vue" src="image/small/fort.jpg" alt="Fort de Pomègues"/></div>
-			<div id="resume"><h3>Fort de Pomègues</h3></div>
-		</a>
+		<div id="long">
+			<a href ="image/large/vieux_p.jpg">
+				<div id="bigbox">
+				<img class="pict" src="image/small/vieux_p.jpg" alt="Vieux Port"/></div>
+				<div id="resume"><h3>Vieux Port</h3></div>
+			</a>
+			
+			<div id="cote">
+				<a href ="image/large/fort.jpg">
+					<div id="littlebox">
+					<img class="pict" src="image/small/fort.jpg" alt="Fort de Pomègues"/></div>
+					<div id="resume"><h3>Fort de Pomègues</h3></div>
+				</a>
 
-		<a href ="image/large/frioul.jpg">
-			<div id="littlebox">
-			<img class="pict vue" src="image/small/frioul.jpg" alt="Îles du Frioul"/></div>
-			<div id="resume"><h3>Îles du Frioul</h3></div>
-		</a>
-
-		<a href ="image/large/calanques.jpg">
-			<div id="bigbox">
-			<img class="pict vue" src="image/small/calanques.jpg" alt="Parc National des Calanques"/></div>
-			<div id="resume"><h3>Parc National des Calanques</h3></div>
-		</a>
-
-		<a href ="image/large/dame.jpg">
-			<div id="littlebox">
-			<img class="pict vue" src="image/small/dame.jpg" alt="Notre-Dame-de-la-Garde"/></div>
-			<div id="resume"><h3>Notre-Dame-de-la-Garde</h3></div>
-		</a>
-		
-		<a href ="image/large/parc.jpg">
-			<div id="littlebox">
-			<img class="pict vue" src="image/small/parc.jpg" alt="Parc Longchamp"/></div>
-			<div id="resume"><h3>Parc Longchamp</h3></div>
-		</a>
-		
+				<a href ="image/large/frioul.jpg">
+					<div id="littlebox">
+					<img class="pict" src="image/small/frioul.jpg" alt="Îles du Frioul"/></div>
+					<div id="resume"><h3>Îles du Frioul</h3></div>
+				</a>
+			</div>
+		</div>
+		<div id="long">
+			<a href ="image/large/calanques.jpg">
+				<div id="bigbox">
+				<img class="pict vue" src="image/small/calanques.jpg" alt="Parc National des Calanques"/></div>
+				<div id="resume"><h3>Parc National des Calanques</h3></div>
+			</a>
+			<div id="cote">
+				<a href ="image/large/dame.jpg">
+					<div id="littlebox">
+					<img class="pict vue" src="image/small/dame.jpg" alt="Notre-Dame-de-la-Garde"/></div>
+					<div id="resume"><h3>Notre-Dame-de-la-Garde</h3></div>
+				</a>
+				
+				<a href ="image/large/parc.jpg">
+					<div id="littlebox">
+					<img class="pict vue" src="image/small/parc.jpg" alt="Parc Longchamp"/></div>
+					<div id="resume"><h3>Parc Longchamp</h3></div>
+				</a>
+			</div>
+		</div>
 	</div>
 </section>
 

@@ -50,6 +50,7 @@ header{
 	width:100%; 
 }
 nav img{
+	height: 60px;
 	margin-top: 35px;
 }
 #list{
@@ -102,6 +103,7 @@ fieldset{
 }
 
 .loupe{
+	height: 25px;
 	margin-top: 10px;
 }
 
@@ -163,14 +165,17 @@ label{
 	vertical-align: middle;
 }
 
-#circle{ /*l'image associé au bouton*/
+.circle{ /*l'image associé au bouton*/
 	display: inline-block;
 	position: relative;
 	border-radius: 60px;
 	z-index:3;
 }
+.circle img{
+	height: 60px;
+}
 
-#text{ /*texte dans les boutons*/
+.text{ /*texte dans les boutons*/
 	display: inline-block;
 	font-family: raleway-gras;
 	position: relative;
@@ -179,7 +184,7 @@ label{
 	transition-duration: 0.2s;
 }
 
-#imblue{ /*partie bleu des boutons*/
+.imblue{ /*partie bleu des boutons*/
 	display: inline-block;
 	position: absolute;
 	left: 0;
@@ -190,11 +195,11 @@ label{
 	transition-duration: 0.2s;
 }
 
-input:checked + .switch #text{
+input:checked + .switch .text{
 	color: #f2f2f2;
 }
 
-input:checked + .switch #imblue{
+input:checked + .switch .imblue{
 	width: 100%;
 }
 form p{
@@ -202,6 +207,7 @@ form p{
 	font-size: large;
 }
 form p img{
+	height: 30px;
 	position: relative;
 	top: -5px;
 	margin-right: 5px;
@@ -258,7 +264,8 @@ form p img{
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px; 
 }
-#unpeuplus{
+.staryes, .starno{
+	height: 17px;
 }
 
 /*pop*/
@@ -466,6 +473,7 @@ div ul li{
 	}
 
 	input[type='image']{
+		height: 60px;
 		display: block;
 	}
 

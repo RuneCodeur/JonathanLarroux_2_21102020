@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Reservia</title>
 	<meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 <header>
 	<nav id="entete">	
-		<nav><img src="image/logo.svg" height="60cm" alt="Reservia"/></nav>
+		<nav><img src="image/logo.svg" alt="Reservia"/></nav>
 		<nav id="list">
 			<div>
 				<a href="#hebergement" class="heberge">Hébergements</a>
@@ -24,15 +24,14 @@
 <section>
 	<h1>Trouver votre hébergement pour des vacances de rêve</h1>
 	<p>En plein centre ville ou en pleine nature</p>
-	<form>
+	<form action="traitement.php" method="post">
 		<fieldset>
-		<form method="post" action="traitement.php">
 		<div>
 			<div class="cherche">
-				<label for="vacance"> <img class="loupe" src="icon/lieu.svg" height="25cm" alt="lieu"></label>
+				<label for="vacance"> <img class="loupe" src="icon/lieu.svg" alt="lieu"></label>
 				<input type="search" name="adresse" value="Marseille, France">
 				<input type="submit" value="Rechercher">
-				<input type="image" src="icon/search.svg" height="60cm"><br/>
+				<input type="image" src="icon/search.svg" alt="chercher"><br/>
 			</div>
 			<div class="filtre">
 				<div>
@@ -42,40 +41,40 @@
 					<label for="eco" class="checkbox">
 						<input type="checkbox" id="eco" class="checkbox">
 						<span class="switch">
-							<span class="eco" id="circle" ><img src="icon/eco.svg" height="60cm" alt="eco"></span>
-							<span id="text">Économique</span>
-							<span id="imblue"></span>
+							<span class="eco circle" ><img src="icon/eco.svg" alt="eco"></span>
+							<span class="text">Économique</span>
+							<span class="imblue"></span>
 						</span>
 					</label>
 					<label for="guy" class="checkbox">
 						<input type="checkbox" id="guy" class="checkbox">
 						<span class="switch">
-							<span class="guy" id="circle" ><img src="icon/guy.svg" height="60cm" alt="guy"></span>
-							<span id="text">Familial</span>
-							<span id="imblue"></span>
+							<span class="guy circle"  ><img src="icon/guy.svg" alt="guy"></span>
+							<span class="text">Familial</span>
+							<span class="imblue"></span>
 						</span>
 					</label>
 					<label for="heart" class="checkbox">
 						<input type="checkbox" id="heart" class="checkbox">
 						<span class="switch">
-							<span class="heart" id="circle" ><img src="icon/heart.svg" height="60cm" alt="heart"></span>
-							<span id="text">Romantique</span>
-							<span id="imblue"></span>
+							<span class="heart circle" ><img src="icon/heart.svg" alt="heart"></span>
+							<span class="text">Romantique</span>
+							<span class="imblue"></span>
 						</span>
 					</label>
 					<label for="dog" class="checkbox">
 						<input type="checkbox" id="dog" class="checkbox">
 						<span class="switch">
-							<span class="dog" id="circle" ><img src="icon/dog.svg" height="60cm" alt="dog"></span>
-							<span id="text">Animaux autorisés</span>
-							<span id="imblue"></span>
+							<span class="dog circle" ><img src="icon/dog.svg" alt="dog"></span>
+							<span class="text">Animaux autorisés</span>
+							<span class="imblue"></span>
 						</span>
 					</label>
 				</div>
 			</div>
 		</div>
 		</fieldset>
-		<p><a href=" lien.html"><img src="icon/info.svg" height="30cm" alt="info"></a>Plus de 500 logements sont disponibles dans cette ville</p>
+		<p><a href=" lien.html"><img src="icon/info.svg" alt="info"></a>Plus de 500 logements sont disponibles dans cette ville</p>
 	</form>
 </section>
 
@@ -90,11 +89,11 @@
 					<h3>Auberge la Cannebière</h3>
 					<p>Nuit à partir de <strong>25€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/starno.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="starno" src="icon/starno.svg" alt=""/>
 					</div>
 				</div>
 			</a></div>
@@ -107,11 +106,11 @@
 					<h3>Hôtel du port</h3>
 					<p>Nuit à partir de 52<strong>€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
 					</div>
 				</div>
 			</a></div>
@@ -124,11 +123,11 @@
 					<h3>Hôtel Les mouettes</h3>
 					<p>Nuit à partir de 76<strong>€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/starno.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="starno" src="icon/starno.svg" alt=""/>
 					</div>
 				</div>
 			</a></div>
@@ -141,11 +140,11 @@
 					<h3>Hôtel de la mer</h3>
 					<p>Nuit à partir de 46<strong>€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/starno.svg" height="17cm" alt=""/>
-						<img src="icon/starno.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="starno" src="icon/starno.svg" alt=""/>
+						<img class="starno" src="icon/starno.svg" alt=""/>
 					</div>
 				</div>
 			</a></div>
@@ -158,11 +157,11 @@
 					<h3>Auberge Le Panier</h3>
 					<p>Nuit à partir de <strong>23€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/starno.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="starno" src="icon/starno.svg" alt=""/>
 					</div>
 				</div>
 			</a></div>
@@ -175,11 +174,11 @@
 					<h3>Hôtel chez Amina</h3>
 					<p>Nuit à partir de 96<strong>€</strong></p>
 					<div id="star">
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
-						<img src="icon/staryes.svg" height="17cm" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
+						<img class="staryes" src="icon/staryes.svg" alt=""/>
 					</div>
 				</div>
 			</a></div></div>
@@ -200,11 +199,11 @@
 				<h3>Hôtel Le soleil du matin</h3>
 				<p>Nuit à partir de 128<strong>€</strong></p>
 				<div id="star">
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
 				</div>
 			</div>
 		</a></div>
@@ -218,11 +217,11 @@
 				<h3>Au coeur de l'eau Chambre d'hôtes</h3>
 				<p>Nuit à partir de 71<strong>€</strong></p>
 				<div id="star">
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/starno.svg" height="17cm" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="starno" src="icon/starno.svg" alt=""/>
 				</div>
 			</div>
 		</a></div>
@@ -235,11 +234,11 @@
 				<h3>Hôtel Tout bleu et Blanc</h3>
 				<p>Nuit à partir de 68<strong>€</strong></p>
 				<div id="star">
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/staryes.svg" height="17cm" alt=""/>
-					<img src="icon/starno.svg" height="17cm" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="staryes" src="icon/staryes.svg" alt=""/>
+					<img class="starno" src="icon/starno.svg" alt=""/>
 				</div>
 			</div>
 		</a></div>

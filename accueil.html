@@ -29,14 +29,12 @@
 		<div>
 			<div class="cherche">
 				<label for="vacance"> <img class="loupe" src="icon/lieu.svg" alt="lieu"></label>
-				<input type="search" name="adresse" value="Marseille, France">
+				<input id="vacance" type="search" name="adresse" value="Marseille, France">
 				<input type="submit" value="Rechercher">
 				<input type="image" src="icon/search.svg" alt="chercher"><br/>
 			</div>
 			<div class="filtre">
-				<div>
-					<label for="vacance">Filtres</label>
-				</div>
+				<div id="filtres">Filtres</div>
 				<div>
 					<label for="eco" class="checkbox">
 						<input type="checkbox" id="eco" class="checkbox">
@@ -78,17 +76,17 @@
 	</form>
 </section>
 
-<section class="lieu">
+<div class="lieu">
 	<section id="hebergement">
 		<div id="titre"><h2>Hébergement à marseille</h2></div>
 		<div id="chambre">
-			<div id="case"><a href ="image/large/cannebiere.jpg">
+			<div class="case"><a href ="image/large/cannebiere.jpg">
 				<div ><img class="pict" src="image/small/cannebiere.jpg" alt="Auberge la Cannebière"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Auberge la Cannebière</h3>
 					<p>Nuit à partir de <strong>25€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -98,14 +96,14 @@
 				</div>
 			</a></div>
 
-			<div id="case"><a href ="image/large/port.jpg">
+			<div class="case"><a href ="image/large/port.jpg">
 				<div>
 					<img class="pict" src="image/small/port.jpg" alt="Hôtel du port"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Hôtel du port</h3>
 					<p>Nuit à partir de 52<strong>€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -115,14 +113,14 @@
 				</div>
 			</a></div>
 
-			<div id="case"><a href ="image/large/mouette.jpg">
+			<div class="case"><a href ="image/large/mouette.jpg">
 				<div>
 					<img class="pict" src="image/small/mouette.jpg" alt="Hôtel Les mouettes"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Hôtel Les mouettes</h3>
 					<p>Nuit à partir de 76<strong>€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -132,14 +130,14 @@
 				</div>
 			</a></div>
 
-			<div id="case"><a href ="image/large/hotel_mer.jpg">
+			<div class="case"><a href ="image/large/hotel_mer.jpg">
 				<div>
 					<img class="pict" src="image/small/hotel_mer.jpg" alt="Hôtel de la mer"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Hôtel de la mer</h3>
 					<p>Nuit à partir de 46<strong>€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -149,14 +147,14 @@
 				</div>
 			</a></div>
 
-			<div id="case"><a href ="image/large/panier.jpg">
+			<div class="case"><a href ="image/large/panier.jpg">
 				<div>
 					<img class="pict" src="image/small/panier.jpg" alt="Auberge Le Panier"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Auberge Le Panier</h3>
 					<p>Nuit à partir de <strong>23€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -166,14 +164,14 @@
 				</div>
 			</a></div>
 
-			<div id="case"><a href ="image/large/amina.jpg">
+			<div class="case"><a href ="image/large/amina.jpg">
 				<div >
 					<img class="pict" src="image/small/amina.jpg" alt="Hôtel chez Amina"/>
 				</div>
-				<div id="note">
+				<div class="note">
 					<h3>Hôtel chez Amina</h3>
 					<p>Nuit à partir de 96<strong>€</strong></p>
-					<div id="star">
+					<div class="star">
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
 						<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -189,16 +187,16 @@
 
 	<section class="pop">
 		<div id="popul"><h2>Les plus populaires</h2>
-		<a href ="accueil.html"><img src="icon/more.svg" height="25cm" alt="plus"/></a></div>
+		<a href ="accueil.html"><img src="icon/more.svg" alt="plus" id="more" /></a></div>
 		<div id="beau">
-		<div id="case"><a href ="image/large/soleil_matin.jpg">
+		<div class="case"><a href ="image/large/soleil_matin.jpg">
 			<div>
 				<img class="pict" src="image/small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
 			</div>
-			<div id="note">
+			<div class="note">
 				<h3>Hôtel Le soleil du matin</h3>
 				<p>Nuit à partir de 128<strong>€</strong></p>
-				<div id="star">
+				<div class="star">
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -209,14 +207,14 @@
 		</a></div>
 
 
-		<div id="case"><a href ="image/large/au_coeur_de_leau.jpg">
+		<div class="case"><a href ="image/large/au_coeur_de_leau.jpg">
 			<div>
 				<img class="pict" src="image/small/au_coeur_de_leau.jpg" alt="Au coeur de l'eau Chambre d'hôtes"/>
 			</div>
-			<div id="note">
+			<div class="note">
 				<h3>Au coeur de l'eau Chambre d'hôtes</h3>
 				<p>Nuit à partir de 71<strong>€</strong></p>
-				<div id="star">
+				<div class="star">
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -226,14 +224,14 @@
 			</div>
 		</a></div>
 
-		<div id="case"><a href ="image/large/bleu_blanc.jpg">
+		<div class="case"><a href ="image/large/bleu_blanc.jpg">
 			<div >
 				<img class="pict" src="image/small/bleu_blanc.jpg" alt="Hôtel Tout bleu et Blanc"/>
 			</div>
-			<div id="note">
+			<div class="note">
 				<h3>Hôtel Tout bleu et Blanc</h3>
 				<p>Nuit à partir de 68<strong>€</strong></p>
-				<div id="star">
+				<div class="star">
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
 					<img class="staryes" src="icon/staryes.svg" alt=""/>
@@ -244,49 +242,49 @@
 		</a></div>
 	</div>
 	</section>
-</section>
+</div>
 <section id="activites">
 	<div id="title"><h2> Activité à Marseille</h2></div>
 	<div id="typeacti">
 
-		<div id="long">
+		<div class="long">
 			<a href ="image/large/vieux_p.jpg">
-				<div id="bigbox">
+				<div class="bigbox">
 				<img class="pict" src="image/small/vieux_p.jpg" alt="Vieux Port"/></div>
-				<div id="resume"><h3>Vieux Port</h3></div>
+				<div class="resume"><h3>Vieux Port</h3></div>
 			</a>
 			
-			<div id="cote">
+			<div class="cote">
 				<a href ="image/large/fort.jpg">
-					<div id="littlebox">
+					<div class="littlebox">
 					<img class="pict" src="image/small/fort.jpg" alt="Fort de Pomègues"/></div>
-					<div id="resume"><h3>Fort de Pomègues</h3></div>
+					<div class="resume"><h3>Fort de Pomègues</h3></div>
 				</a>
 
 				<a href ="image/large/frioul.jpg">
-					<div id="littlebox">
+					<div class="littlebox">
 					<img class="pict" src="image/small/frioul.jpg" alt="Îles du Frioul"/></div>
-					<div id="resume"><h3>Îles du Frioul</h3></div>
+					<div class="resume"><h3>Îles du Frioul</h3></div>
 				</a>
 			</div>
 		</div>
-		<div id="long">
+		<div class="long">
 			<a href ="image/large/calanques.jpg">
-				<div id="bigbox">
+				<div class="bigbox">
 				<img class="pict vue" src="image/small/calanques.jpg" alt="Parc National des Calanques"/></div>
-				<div id="resume"><h3>Parc National des Calanques</h3></div>
+				<div class="resume"><h3>Parc National des Calanques</h3></div>
 			</a>
-			<div id="cote">
+			<div class="cote">
 				<a href ="image/large/dame.jpg">
-					<div id="littlebox">
+					<div class="littlebox">
 					<img class="pict vue" src="image/small/dame.jpg" alt="Notre-Dame-de-la-Garde"/></div>
-					<div id="resume"><h3>Notre-Dame-de-la-Garde</h3></div>
+					<div class="resume"><h3>Notre-Dame-de-la-Garde</h3></div>
 				</a>
 				
 				<a href ="image/large/parc.jpg">
-					<div id="littlebox">
+					<div class="littlebox">
 					<img class="pict vue" src="image/small/parc.jpg" alt="Parc Longchamp"/></div>
-					<div id="resume"><h3>Parc Longchamp</h3></div>
+					<div class="resume"><h3>Parc Longchamp</h3></div>
 				</a>
 			</div>
 		</div>

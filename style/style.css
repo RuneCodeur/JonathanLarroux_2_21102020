@@ -144,7 +144,8 @@ input[type='image']{
 	font-size: large;
 }
 
-label{
+#filtres{
+	margin: 20px 0px;
 	font-family: raleway-gras;
 }
 
@@ -223,7 +224,7 @@ form p img{
 
 #hebergement{
 	flex-direction: column;
-	width: 66%;
+	width: 70%;
 	min-width: 700px;
 	padding: 60px 0;
 }
@@ -231,14 +232,13 @@ form p img{
 #chambre{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 #titre{
 	margin-top: -60px;
 }
 
-.lieu #case a {/*les boites*/
+.case a {/*les boites*/
 	width: 300px; height: 250px;
 	border-radius: 35px; 
 	position: relative;
@@ -248,13 +248,13 @@ form p img{
 	box-shadow: 0px 0px 7px grey;
 }
 
-#note{/* dans la boite*/
+.note{/* dans la boite*/
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
 }
 
-#case h3,#case p{ /*le texte*/
+.case h3,.case p{ /*le texte*/
 	margin: 5px 0;
 }
 
@@ -274,7 +274,6 @@ form p img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-wrap: wrap; 
 }
 
 #popul{ /*titre*/
@@ -285,8 +284,10 @@ form p img{
 	align-items: center;
 	height: 50px;
 }
-
-.pop #case a{ /*la boite*/
+#more{
+	width: 25px;
+}
+.pop .case a{ /*la boite*/
 	width: 400px;
 	height: 170px;
 	display: flex;
@@ -298,12 +299,16 @@ form p img{
 	border-radius: 25px 0 0 25px;
 }
 
-.pop #note{ /* texte*/
+.pop .note{ /* texte*/
 	margin-left: 15px;
 	width: 200px;
 }
 
-.pop #star{ /*les etoiles*/
+.star{
+	margin-top: 10px;
+}
+
+.pop .star{ /*les etoiles*/
 	margin-top: 60px;
 }
 
@@ -325,7 +330,7 @@ form p img{
 	margin-bottom: 30px;
 }
 
-#long{
+.long{
 	flex-direction: row;
 	width: 50%;
 	min-width: 350px;
@@ -334,7 +339,7 @@ form p img{
 	display: flex;
 	}
 
-#cote{
+.cote{
 	flex-direction:column;
 	flex-wrap: wrap;
 	display: flex;
@@ -347,11 +352,11 @@ form p img{
 	margin: 0px 25px;
 }
 
-#littlebox img{
+.littlebox img{
 	height: 150px; width: 350px;
 }
 
-#bigbox img{
+.bigbox img{
 	height: 400px; width: 350px;
 
 }
@@ -381,7 +386,8 @@ div ul li{
 	font-size: x-large;
 	margin-top: 20px;
 }
-/**** responsive transition****/
+
+/**** responsive de transition****/
 @media screen and (max-width: 1224px){
 	
 	.lieu {
@@ -390,15 +396,30 @@ div ul li{
 	}
 
 	.pop{
-		width: 100%;
-	}
-	#beau{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100%;
+		width: 90%;
 	}
 
+	#beau{
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#titre{
+		text-align: center;
+		padding-right: 50px;
+	} 
+
+	#unpeuplus{
+		text-align: center;
+		padding-right: 250px; 
+	}
+}
+
+@media screen and (max-width: 1090px){
+	#beau{
+		flex-direction: column;
+	}
 }
 /****responsive format mobile****/
 
@@ -489,17 +510,18 @@ div ul li{
 
 	#hebergement{
 		width: 100%;
+		min-width: 10px;
+		justify-content: center;
 	}
 
 	#chambre{
-		justify-content: space-around;
+		width: 100%;
+		justify-content: center;
 	}
 
-	#hebergement  #case a{
-
-		display: inline; 
-		padding: 5px 50px;
-		margin: 0px;
+	#hebergement .case a{
+		display: block; 
+		width: 	auto;
 		box-shadow: 0px 0px 0px ;
 	}
 
@@ -507,12 +529,9 @@ div ul li{
 		width: 400px;
 	}
 
-	#titre, #unpeuplus{
-		margin-left: 130px;
-	}
-
 	#title{
-		margin-left: 20px;
+		text-align: center;
+		padding-right: 125px;
 	}
 
 	 #typeacti{
@@ -525,20 +544,20 @@ div ul li{
 		margin-bottom: 30px;
 	}
 
-	#long{
+	.long{
 		width: auto;
 	}
 
-	#cote{
+	.cote{
 		width: auto;
 	}
 
-	#littlebox img, #bigbox img{
+	.littlebox img, .bigbox img{
 		width: 400px;
 		height: 150px;
 	}
 
-	#resume{
+	.resume{
 		margin-left: 20px;
 	}
 

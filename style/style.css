@@ -15,12 +15,12 @@ font-family: raleway-gras;
 }
 
 *{
-	font-family: raleway, Verdana, Arial;
+	font-family: raleway, Arial, georgia, sans-serif;
 	color: black;
 }
 
 h3{			
-	font-family: raleway-gras;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	color: black;
 	font-size: large;
 }
@@ -35,8 +35,6 @@ body{
 	width: 92%;
 }
 
-/*tete */
-
 header{
 	display: flex;
 	align-items: center;
@@ -49,15 +47,18 @@ header{
 	display: flex;
 	width:100%; 
 }
+
 nav img{
 	height: 60px;
-	margin-top: 35px;
+	margin-top: 50px;
 }
+
 #list{
 	width: 525px;
 	height: 150px;
 	display: flex;
 }
+
 #list div{
 	flex-wrap: nowrap;
 	display: flex;
@@ -67,7 +68,6 @@ nav img{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	height: 150px;
 	width: 175px;
 	border-top: 4px #f2f2f2 solid;
@@ -80,20 +80,19 @@ nav img{
 }
 
 .inscrire{
-	font-family: raleway-gras;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	color: #0065fc;
 }
 
-/* barre de recherche*/
-
 h1, h2{
-	font-family: raleway-gras;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	font-size: 155%
 }
 
 section p{
 	font-size: 110%;
 }
+
 fieldset{
 	border: none;
 }
@@ -103,16 +102,14 @@ fieldset{
 }
 
 .loupe{
-	height: 25px;
-	margin-top: 10px;
+	height: 30px;
+	margin-top: 15px;
 }
 
 input[type='search'], input[type='submit']{
 	border: none;
-	color: black;
 	height: 55px;
 	min-width: 275px;
-	font-family: raleway;
 	font-weight: bold;
 	font-size: 125%;
 	margin-left: 25px;
@@ -124,8 +121,9 @@ input[type='search'], input[type='submit']:focus{
 
 input[type='submit']{
 	background-color: #0065fc;
-	border-radius: 0 15px 15px 0;
-	min-width: 150px;
+	border-radius: 0 20px 20px 0;
+	min-width: 180px;
+	min-height: 70px;
 	color: white;
 }
 
@@ -133,27 +131,29 @@ input[type='image']{
 	display: none;
 }
 
-/*filtres*/
-
-.filtre{  
-	width: 100%;
-	display: block;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	font-weight: bold;
-	font-size: large;
+.filtre{
+	flex-direction: row;
+	display: flex;
+	padding: 20px 0 0 0;
 }
 
 #filtres{
-	margin: 20px 0px;
-	font-family: raleway-gras;
+	display: inline-block;
+	font-size: x-large;
+	margin: 25px 45px 0 0;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
+	margin-bottom: 10px;
+}
+
+.checkbox{
+	display: inline-block;
 }
 
 .checkbox input{
 	display: none;
 }
 
-.switch{ /*partie blanche des boutons*/
+.switch{
 	border-radius: 60px;
 	display: inline-block;
 	height: 60px;
@@ -162,31 +162,30 @@ input[type='image']{
 	box-shadow: 0px 0px 7px grey;
 }
 
-.switch span{ /*l'alignement du texte*/
+.switch span{
 	vertical-align: middle;
 }
 
-.circle{ /*l'image associé au bouton*/
+.circle{
 	display: inline-block;
 	position: relative;
-	border-radius: 60px;
 	z-index:3;
 }
 .circle img{
 	height: 60px;
 }
 
-.text{ /*texte dans les boutons*/
-	display: inline-block;
-	font-family: raleway-gras;
+.text{
+	font-weight: bold;
+	font-size: large;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	position: relative;
 	margin-right: 20px;
 	z-index: 2;
 	transition-duration: 0.2s;
 }
 
-.imblue{ /*partie bleu des boutons*/
-	display: inline-block;
+.imblue{
 	position: absolute;
 	left: 0;
 	width: 60px; height: 60px;
@@ -200,21 +199,28 @@ input:checked + .switch .text{
 	color: #f2f2f2;
 }
 
+input:hover + .switch .text{
+	color: #0065fc;
+}
+
 input:checked + .switch .imblue{
 	width: 100%;
+}
+
+input:checked + :hover .text{
+	color: black;
 }
 form p{
 	display: flex;
 	font-size: large;
 }
+
 form p img{
 	height: 30px;
 	position: relative;
 	top: -5px;
 	margin-right: 5px;
 }
-
-/*les lieux*/
 
 .lieu { 
 	display: flex;
@@ -238,7 +244,7 @@ form p img{
 	margin-top: -60px;
 }
 
-.case a {/*les boites*/
+.case a{
 	width: 300px; height: 250px;
 	border-radius: 35px; 
 	position: relative;
@@ -248,36 +254,39 @@ form p img{
 	box-shadow: 0px 0px 7px grey;
 }
 
-.note{/* dans la boite*/
+.note{
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
 }
 
-.case h3,.case p{ /*le texte*/
+.case h3,.case p{ 
 	margin: 5px 0;
 }
 
-.pict{ /*la photo*/
+figure{
+	display:inline;
+	margin: 0px;
+}
+
+.pict{
 	width: 300px;
 	height: 150px;
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px; 
 }
+
 .staryes, .starno{
 	height: 17px;
 }
 
-/*pop*/
-
-.pop{ /*la case pop*/
+.pop{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-#popul{ /*titre*/
-
+#popul{
 	display: flex;
 	justify-content: space-between;
 	width: 400px;
@@ -287,19 +296,19 @@ form p img{
 #more{
 	width: 25px;
 }
-.pop .case a{ /*la boite*/
+.pop .case a{
 	width: 400px;
 	height: 170px;
 	display: flex;
 	align-items: center;
 }
 
-.pop .pict { /*image*/
+.pop .pict {
 	width: 150px;height: 170px;
 	border-radius: 25px 0 0 25px;
 }
 
-.pop .note{ /* texte*/
+.pop .note{
 	margin-left: 15px;
 	width: 200px;
 }
@@ -308,19 +317,16 @@ form p img{
 	margin-top: 10px;
 }
 
-.pop .star{ /*les etoiles*/
+.pop .star{
 	margin-top: 60px;
 }
 
-/*les activite*/
-
-
-#activites{ /*la boite complete*/
+#activites{ 
 	display: flex;
 	flex-direction:column;
 }
 
-#typeacti{ /*la position des boites*/
+#typeacti{
 	display: flex;
 	flex-direction: row;
 	height: auto;
@@ -337,7 +343,7 @@ form p img{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	display: flex;
-	}
+}
 
 .cote{
 	flex-direction:column;
@@ -347,7 +353,7 @@ form p img{
 	min-width: 350px;
 }
 
-.activites a{ /*la boite*/
+.activites a{
 	display: inline-block;
 	margin: 0px 25px;
 }
@@ -358,9 +364,7 @@ form p img{
 
 .bigbox img{
 	height: 400px; width: 350px;
-
 }
-/*footer*/
 
 footer{
 	display:flex;
@@ -389,7 +393,6 @@ div ul li{
 
 /**** responsive de transition****/
 @media screen and (max-width: 1224px){
-	
 	.lieu {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -421,10 +424,9 @@ div ul li{
 		flex-direction: column;
 	}
 }
-/****responsive format mobile****/
 
+/****responsive format mobile****/
 @media screen and (max-width: 785px){
-	
 	body{
 		width: 100%;
 	}
@@ -441,6 +443,7 @@ div ul li{
 	nav img{
 		position: absolute;
 		margin-left: 20px;
+		margin-top: 35px;
 		top: 0px;
 	}
 
@@ -470,7 +473,9 @@ div ul li{
 		bottom: 60px;
 		right: 20px;	
 	}
-
+	.filtre{
+		flex-direction: column;
+	}
 	.heberge, .act{
 		border-bottom: 4px #f2f2f2 solid;
 	}
@@ -499,8 +504,13 @@ div ul li{
 	}
 
 	.cherche{
+		margin-top: 40px;
 		width: 100%;
 		justify-content: space-between;
+	}
+
+	#popul{
+		margin-top: 20px;
 	}
 
 	.lieu{
@@ -513,7 +523,10 @@ div ul li{
 		min-width: 10px;
 		justify-content: center;
 	}
-
+	#titre{
+		margin-top: 25px;
+		margin-bottom: -20px;
+	} 
 	#chambre{
 		width: 100%;
 		justify-content: center;
@@ -562,7 +575,6 @@ div ul li{
 	}
 
 	footer{
-		
 		display: block;
 		margin-top: 50px;
 		margin-left: 20px;

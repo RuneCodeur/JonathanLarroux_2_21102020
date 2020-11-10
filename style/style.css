@@ -195,20 +195,12 @@ input[type='image']{
 	transition-duration: 0.2s;
 }
 
-input:checked + .switch .text{
+input:hover + .switch .text{
 	color: #f2f2f2;
 }
 
-input:hover + .switch .text{
-	color: #0065fc;
-}
-
-input:checked + .switch .imblue{
+input:hover + .switch .imblue{
 	width: 100%;
-}
-
-input:checked + :hover .text{
-	color: black;
 }
 form p{
 	display: flex;
@@ -350,6 +342,7 @@ figure{
 	flex-wrap: wrap;
 	display: flex;
 	width: auto;
+	justify-content: space-between;
 	min-width: 350px;
 }
 

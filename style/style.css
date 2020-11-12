@@ -40,15 +40,10 @@ header{
 	align-items: center;
 	height: 150px;
 	width: 100%;
-}
-
-#entete{
 	justify-content: space-between;
-	display: flex;
-	width:100%; 
 }
 
-nav img{
+.tête img{
 	height: 60px;
 	margin-top: 50px;
 }
@@ -427,17 +422,15 @@ div ul li{
 	header{
 		height: 150px;
 		width: 100%;
-	}
-
-	#entete{
 		flex-direction: column;
 	}
 
-	nav img{
+	#tete img{
 		position: absolute;
-		margin-left: 20px;
-		margin-top: 35px;
-		top: 0px;
+		margin-left: 15px;
+		margin-top: 40px;
+		top: 0;
+		left: 0;
 	}
 
 	#list{

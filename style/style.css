@@ -30,9 +30,9 @@ a{
 }
 
 body{
-	background-color: #f2f2f2;
+	background-color: white;
 	margin: auto;
-	width: 92%;
+	width: 95%;
 }
 
 header{
@@ -209,26 +209,30 @@ form p img{
 	margin-right: 5px;
 }
 
-.lieu { 
+.lieu {
 	display: flex;
-	margin-top: 50px;
+	margin-top: 40px;
 	justify-content: space-between;
 }
 
 #hebergement{
+	background-color: #f2f2f2;
+	border-radius: 35px;
+	margin-right: 20px;
 	flex-direction: column;
-	width: 70%;
+	width: 66%;
 	min-width: 700px;
-	padding: 60px 0;
+	padding: 50px 40px;
 }
 
 #chambre{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #titre{
-	margin-top: -60px;
+	margin-left: 10px;
 }
 
 .case a{
@@ -239,6 +243,7 @@ form p img{
 	padding: 10px 10px;
 	margin: 20px 10px;
 	box-shadow: 0px 0px 7px grey;
+	background-color: white;
 }
 
 .note{
@@ -267,7 +272,15 @@ figure{
 	height: 17px;
 }
 
+#unpeuplus{
+
+	margin-left: 10px;
+}
+
 .pop{
+	background-color: #f2f2f2;
+	border-radius: 35px;
+	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -280,14 +293,17 @@ figure{
 	align-items: center;
 	height: 50px;
 }
+
 #more{
 	width: 25px;
 }
+
 .pop .case a{
 	width: 400px;
 	height: 170px;
 	display: flex;
 	align-items: center;
+	margin: 20px 20px;
 }
 
 .pop .pict {
@@ -320,7 +336,11 @@ figure{
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	margin-bottom: 30px;
+}
+#typeacti a{
+	overflow: hidden;
+	border-radius: 35px;
+	box-shadow: 0 0 7px grey;
 }
 
 .long{
@@ -340,12 +360,6 @@ figure{
 	justify-content: space-between;
 	min-width: 350px;
 }
-
-.activites a{
-	display: inline-block;
-	margin: 0px 25px;
-}
-
 .littlebox img{
 	height: 150px; width: 350px;
 }
@@ -353,20 +367,31 @@ figure{
 .bigbox img{
 	height: 400px; width: 350px;
 }
+.long .resume{
+	margin-left: 10px;
+}
 
 footer{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	margin-top: 60px;
+	background-color: #f2f2f2;
+}
+
+#pieddepage{
 	display:flex;
 	flex-wrap: wrap;
 	width: 80%;	
-	margin-top: 50px;
+	margin-left: 50px;
 	height: auto;
 	justify-content: space-between; 
 }
 
-footer div{
+#pieddepage div{
 	flex-direction: column;
 	width: 350px;
-	margin-bottom: 50px;
+	margin: 50px 0;
 }
 
 div ul{

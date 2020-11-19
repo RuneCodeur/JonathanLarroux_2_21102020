@@ -30,7 +30,7 @@ a{
 }
 
 body{
-	background-color: white;
+	background-color: #ffffff;
 	margin: auto;
 	width: 95%;
 }
@@ -65,7 +65,7 @@ header{
 	justify-content: center;
 	height: 150px;
 	width: 175px;
-	border-top: 4px #f2f2f2 solid;
+	border-top: 4px #ffffff solid;
 	font-size: large;
 }
 
@@ -93,21 +93,23 @@ fieldset{
 }
 
 .cherche{
+	border: 1px solid #f2f2f2;
+	border-radius: 20px;
+	background-color: #f2f2f2;
 	display: flex;
+	position: relative;
+	width: 420px;
 }
 
 .loupe{
-	height: 30px;
-	margin-top: 15px;
+	width: 20px;
+	margin: 19px 25px;
 }
 
-input[type='search'], input[type='submit']{
-	border: none;
-	height: 55px;
-	min-width: 275px;
+input[type='search']{
+	min-width: 230px;
 	font-weight: bold;
-	font-size: 125%;
-	margin-left: 25px;
+	border: none;
 }
 
 input[type='search'], input[type='submit']:focus{
@@ -115,11 +117,16 @@ input[type='search'], input[type='submit']:focus{
 }
 
 input[type='submit']{
+	position: absolute;
+	border: none;
+	font-size: 125%;
 	background-color: #0065fc;
 	border-radius: 0 20px 20px 0;
-	min-width: 180px;
-	min-height: 70px;
-	color: white;
+	width: 180px;
+	left: 300px;
+	top: -1px;
+	height: 72px;
+	color: #ffffff;
 }
 
 input[type='image']{
@@ -243,7 +250,7 @@ form p img{
 	padding: 10px 10px;
 	margin: 20px 10px;
 	box-shadow: 0px 0px 7px grey;
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .note{
@@ -284,6 +291,7 @@ figure{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 800px;
 }
 
 #popul{
@@ -341,6 +349,7 @@ figure{
 	overflow: hidden;
 	border-radius: 35px;
 	box-shadow: 0 0 7px grey;
+	margin: 10px;
 }
 
 .long{
@@ -405,22 +414,26 @@ div ul li{
 }
 
 /**** responsive de transition****/
-@media screen and (max-width: 1224px){
+@media screen and (max-width: 1325px){
 	.lieu {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
 
 	.pop{
-		width: 90%;
+		padding-bottom: 25px;
+		margin-bottom: 20px;
+		height: auto;
 	}
-
 	#beau{
 		flex-direction: row;
+		width: 920px;
 		display: flex;
 		flex-wrap: wrap;
 	}
-
+	#hebergement{
+		margin: 0px;
+	}
 	#titre{
 		text-align: center;
 		padding-right: 50px;
@@ -434,6 +447,8 @@ div ul li{
 
 @media screen and (max-width: 1090px){
 	#beau{
+		width: 780px;
+		align-items: center;
 		flex-direction: column;
 	}
 }
@@ -483,6 +498,7 @@ div ul li{
 		position: absolute;
 		bottom: 60px;
 		right: 20px;	
+		border: none;
 	}
 	.filtre{
 		flex-direction: column;
@@ -496,7 +512,6 @@ div ul li{
 	}
 
 	.heberge:hover, .act:hover{
-
 		border-bottom: 4px #0065fc solid;
 	}
 	
@@ -510,16 +525,20 @@ div ul li{
 	}
 
 	input[type='image']{
-		height: 60px;
+		height: 80px;
 		display: block;
 	}
 
 	.cherche{
 		margin-top: 40px;
-		width: 100%;
-		justify-content: space-between;
+		width: 340px;
 	}
+	.pop{
+		padding-bottom: 35px;
+		width: 100%;
+		border-radius: 0;
 
+	}
 	#popul{
 		margin-top: 20px;
 	}
@@ -530,8 +549,11 @@ div ul li{
 	}
 
 	#hebergement{
-		width: 100%;
+		width: auto;
 		min-width: 10px;
+		margin: 0px;
+		padding: 0px;
+		background-color:#ffffff;
 		justify-content: center;
 	}
 	#titre{
@@ -588,7 +610,6 @@ div ul li{
 	footer{
 		display: block;
 		margin-top: 50px;
-		margin-left: 20px;
 	}
 
 	footer div{

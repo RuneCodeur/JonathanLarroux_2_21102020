@@ -32,14 +32,15 @@ a{
 body{
 	background-color: #ffffff;
 	margin: auto;
-	width: 95%;
+	width: 100%;
 }
 
 header{
 	display: flex;
+	margin-left: 2.5%;
 	align-items: center;
 	height: 150px;
-	width: 100%;
+	width: 95%;
 	justify-content: space-between;
 }
 
@@ -84,6 +85,11 @@ h1, h2{
 	font-size: 155%
 }
 
+#chercher{
+	width: 95%;
+	margin-left: 2.5%;
+}
+
 section p{
 	font-size: 110%;
 }
@@ -93,23 +99,27 @@ fieldset{
 }
 
 .cherche{
-	border: 1px solid #f2f2f2;
 	border-radius: 20px;
 	background-color: #f2f2f2;
 	display: flex;
 	position: relative;
 	width: 420px;
+	height: 70px;
 }
 
-.loupe{
-	width: 20px;
-	margin: 19px 25px;
+.fa-map-marker-alt{
+	font-size: 20px;
+	margin: 25px;
+	color: black;
 }
 
 input[type='search']{
 	min-width: 230px;
 	font-weight: bold;
-	border: none;
+	margin-top: 1px;
+	height: 68px;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
+	border:none;
 }
 
 input[type='search'], input[type='submit']:focus{
@@ -118,19 +128,19 @@ input[type='search'], input[type='submit']:focus{
 
 input[type='submit']{
 	position: absolute;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	border: none;
 	font-size: 125%;
 	background-color: #0065fc;
 	border-radius: 0 20px 20px 0;
 	width: 180px;
 	left: 300px;
-	top: -1px;
-	height: 72px;
+	height: 70px;
 	color: #ffffff;
 }
 
-input[type='image']{
-	display: none;
+.fa-search{
+	opacity: 0;
 }
 
 .filtre{
@@ -172,11 +182,16 @@ input[type='image']{
 	display: inline-block;
 	position: relative;
 	z-index:3;
+	font-size: 30px;
+	padding-top: 15px;
+	text-align: center;
+	color: #0065fc;
+	background-color: #deebff;
+	height: 45px;
+	width: 60px;
+	border-radius: 30px;
 }
-.circle img{
-	height: 60px;
-}
-
+	
 .text{
 	font-weight: bold;
 	font-size: large;
@@ -204,22 +219,33 @@ input:hover + .switch .text{
 input:hover + .switch .imblue{
 	width: 100%;
 }
+
 form p{
 	display: flex;
 	font-size: large;
 }
 
-form p img{
-	height: 30px;
+.fa-info{
+	font-size: 15px;
+	width: 25px;
+	height: 20px;
+	border-radius: 25px;
+	padding-top: 5px;
+	display: block;
 	position: relative;
+	text-align: center;
 	top: -5px;
 	margin-right: 5px;
+	box-shadow: 0 0 7px grey;
+	color: #0065fc;
 }
 
 .lieu {
 	display: flex;
 	margin-top: 40px;
 	justify-content: space-between;
+	width: 95%;
+	margin-left: 2.5%;
 }
 
 #hebergement{
@@ -275,8 +301,14 @@ figure{
 	border-radius: 25px 25px 0px 0px; 
 }
 
-.staryes, .starno{
-	height: 17px;
+.staryes{
+	color: #0065fc;
+	font-size: 17px;
+}
+
+.starno{
+	color: #e0e0e0;
+	font-size: 17px;
 }
 
 #unpeuplus{
@@ -302,8 +334,8 @@ figure{
 	height: 50px;
 }
 
-#more{
-	width: 25px;
+.fa-chart-line{
+	font-size: 25px;
 }
 
 .pop .case a{
@@ -335,6 +367,8 @@ figure{
 #activites{ 
 	display: flex;
 	flex-direction:column;
+	width: 95%;
+	margin-left: 2.5%;
 }
 
 #typeacti{
@@ -345,6 +379,7 @@ figure{
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
 #typeacti a{
 	overflow: hidden;
 	border-radius: 35px;
@@ -369,19 +404,24 @@ figure{
 	justify-content: space-between;
 	min-width: 350px;
 }
+
 .littlebox img{
-	height: 150px; width: 350px;
+	height: 110px; width: 350px;
+}
+
+.middlebox img{
+	height: 190px; width: 350px;
 }
 
 .bigbox img{
 	height: 400px; width: 350px;
 }
+
 .long .resume{
 	margin-left: 10px;
 }
 
 footer{
-	position: absolute;
 	width: 100%;
 	left: 0px;
 	margin-top: 60px;
@@ -425,15 +465,22 @@ div ul li{
 		margin-bottom: 20px;
 		height: auto;
 	}
+
 	#beau{
 		flex-direction: row;
 		width: 920px;
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	#hebergement{
 		margin: 0px;
 	}
+
+	#title{
+		padding-left: 10%;
+	}
+
 	#titre{
 		text-align: center;
 		padding-right: 50px;
@@ -441,7 +488,6 @@ div ul li{
 
 	#unpeuplus{
 		text-align: center;
-		padding-right: 250px; 
 	}
 }
 
@@ -460,6 +506,7 @@ div ul li{
 	}
 
 	header{
+		margin-left: 0;
 		height: 150px;
 		width: 100%;
 		flex-direction: column;
@@ -500,9 +547,11 @@ div ul li{
 		right: 20px;	
 		border: none;
 	}
+
 	.filtre{
 		flex-direction: column;
 	}
+
 	.heberge, .act{
 		border-bottom: 4px #f2f2f2 solid;
 	}
@@ -521,11 +570,23 @@ div ul li{
 	}
 
 	input[type='submit']{
-		display: none;
+		border-radius: 20px;
+		font-size: 0%;
+		width: 70px;
+		height: 70px;
+		opacity: 0;
 	}
 
-	input[type='image']{
-		height: 80px;
+	.fa-search{
+		opacity: 1;
+		font-size: 20px;
+		padding: 25px;
+		border-radius:20px;
+		background-color: #0065fc;
+		color: #ffffff;
+		left: 5px;
+		position: relative;
+
 		display: block;
 	}
 
@@ -533,14 +594,23 @@ div ul li{
 		margin-top: 40px;
 		width: 340px;
 	}
+
 	.pop{
 		padding-bottom: 35px;
 		width: 100%;
 		border-radius: 0;
-
 	}
+
 	#popul{
 		margin-top: 20px;
+	}
+
+	#beau{
+		width:auto;
+	}
+
+	.pop .case a {
+		margin: 20px 0;
 	}
 
 	.lieu{
@@ -556,10 +626,12 @@ div ul li{
 		background-color:#ffffff;
 		justify-content: center;
 	}
+
 	#titre{
 		margin-top: 25px;
 		margin-bottom: -20px;
-	} 
+	}
+
 	#chambre{
 		width: 100%;
 		justify-content: center;
@@ -568,6 +640,7 @@ div ul li{
 	#hebergement .case a{
 		display: block; 
 		width: 	auto;
+		margin: 0px;
 		box-shadow: 0px 0px 0px ;
 	}
 
@@ -577,16 +650,21 @@ div ul li{
 
 	#title{
 		text-align: center;
+		padding-left: 0px; 
 		padding-right: 125px;
+	}
+
+	#activites{
+		align-items: center;
 	}
 
 	 #typeacti{
 		width: auto;
-		align-items: center;
 		height: auto;
 	}
 
 	#typeacti a{
+		margin: 0px;
 		margin-bottom: 30px;
 	}
 
@@ -598,7 +676,7 @@ div ul li{
 		width: auto;
 	}
 
-	.littlebox img, .bigbox img{
+	.littlebox img, .middlebox img, .bigbox img{
 		width: 400px;
 		height: 150px;
 	}

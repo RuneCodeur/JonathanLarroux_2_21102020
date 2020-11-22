@@ -12,13 +12,13 @@
 <body>
 
 <header>	
-		<div id="tete"><img src="image/logo.svg" alt="Reservia"/></div>
+		<img src="image/logo.svg" id="logo" alt="Reservia"/>
 		<nav id="list">
 			<div>
 				<a href="#hebergement" class="heberge">Hébergements</a>
 				<a href="#activites" class="act">Activités</a>
 			</div>
-			<a href ="index.html" class="inscrire">S'inscrire</a>
+			<a href ="index.html" id="sinscrire">S'inscrire</a>
 		</nav>
 </header>
 
@@ -28,13 +28,13 @@
 	<form action="traitement.php" method="post">
 		<fieldset>
 		<div>
-			<div class="cherche">
-				<label for="vacance"> <i class="fas fa-map-marker-alt"></i></label>
+			<div id="barrederecherche">
+				<i class="fas fa-map-marker-alt"></i>
 				<input id="vacance" type="search" name="adresse" value="Marseille, France">
 				<i class="fas fa-search"></i>
 				<input type="submit" value="Rechercher">
 			</div>
-			<div class="filtre">
+			<div id="boiteabouton">
 				<div id="filtres">Filtres</div>
 				<div>
 					
@@ -80,8 +80,8 @@
 
 <div class="lieu">
 	<section id="hebergement">
-		<div id="titre"><h2>Hébergement à marseille</h2></div>
-		<div id="chambre">
+		<div id="titreheberge"><h2>Hébergement à marseille</h2></div>
+		<div id="chambres">
 			<div class="case"><a href ="index.html">
 				<figure><img class="pict" src="image/small/cannebiere.jpg" alt="Auberge la Cannebière"/>
 				</figure>
@@ -188,9 +188,9 @@
 
 
 	<section class="pop">
-		<div id="popul"><h2>Les plus populaires</h2>
+		<div id="lespopulaires"><h2>Les plus populaires</h2>
 		<a href ="index.html"><i class="fas fa-chart-line"></i></a></div>
-		<div id="beau">
+		<div id="chambrespop">
 		<div class="case"><a href ="index.html">
 			<figure>
 				<img class="pict" src="image/small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
@@ -246,7 +246,7 @@
 	</section>
 </div>
 <section id="activites">
-	<div id="title"><h2> Activité à Marseille</h2></div>
+	<div id="titreacti"><h2> Activité à Marseille</h2></div>
 	<div id="typeacti">
 
 		<div class="long">

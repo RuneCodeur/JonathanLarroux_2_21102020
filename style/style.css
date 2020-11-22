@@ -19,10 +19,14 @@ font-family: raleway-gras;
 	color: black;
 }
 
-h3{			
+h1, h2, h3{			
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	color: black;
 	font-size: large;
+}
+
+h1, h2{
+	font-size: 155%
 }
 
 a{
@@ -30,43 +34,38 @@ a{
 }
 
 body{
-	background-color: #ffffff;
-	margin: auto;
 	width: 100%;
+	margin: 0;
+	background-color: #ffffff;
 }
 
 header{
+	width: 95%;	height: 150px;
 	display: flex;
 	margin-left: 2.5%;
-	align-items: center;
-	height: 150px;
-	width: 95%;
 	justify-content: space-between;
 }
 
-.tête img{
+#logo{
 	height: 60px;
 	margin-top: 50px;
 }
 
 #list{
-	width: 525px;
-	height: 150px;
+	width: 525px; height: 150px;
 	display: flex;
 }
 
 #list div{
-	flex-wrap: nowrap;
 	display: flex;
 }
 
-.heberge, .act, .inscrire{
+.heberge, .act, #sinscrire{
+	width: 175px; height: 150px;
 	display: flex;
+	border-top: 4px #ffffff solid;
 	align-items: center;
 	justify-content: center;
-	height: 150px;
-	width: 175px;
-	border-top: 4px #ffffff solid;
 	font-size: large;
 }
 
@@ -75,14 +74,9 @@ header{
 	border-top: 4px #0065fc solid;
 }
 
-.inscrire{
+#sinscrire{
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	color: #0065fc;
-}
-
-h1, h2{
-	font-family: raleway-gras, 'Arial black', Verdana, serif;
-	font-size: 155%
 }
 
 #chercher{
@@ -98,13 +92,12 @@ fieldset{
 	border: none;
 }
 
-.cherche{
-	border-radius: 20px;
-	background-color: #f2f2f2;
+#barrederecherche{
+	width: 420px; height: 70px;
 	display: flex;
 	position: relative;
-	width: 420px;
-	height: 70px;
+	border-radius: 20px;
+	background-color: #f2f2f2;
 }
 
 .fa-map-marker-alt{
@@ -114,12 +107,11 @@ fieldset{
 }
 
 input[type='search']{
-	min-width: 230px;
+	width: 230px; height: 68px;
 	font-weight: bold;
 	margin-top: 1px;
-	height: 68px;
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
-	border:none;
+	border: none;
 }
 
 input[type='search'], input[type='submit']:focus{
@@ -127,15 +119,14 @@ input[type='search'], input[type='submit']:focus{
 }
 
 input[type='submit']{
+	width: 180px; height: 70px;
 	position: absolute;
-	font-family: raleway-gras, 'Arial black', Verdana, serif;
+	left: 300px;
 	border: none;
+	border-radius: 0 20px 20px 0;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	font-size: 125%;
 	background-color: #0065fc;
-	border-radius: 0 20px 20px 0;
-	width: 180px;
-	left: 300px;
-	height: 70px;
 	color: #ffffff;
 }
 
@@ -143,18 +134,17 @@ input[type='submit']{
 	opacity: 0;
 }
 
-.filtre{
+#boiteabouton{
 	flex-direction: row;
 	display: flex;
-	padding: 20px 0 0 0;
+	padding-top: 20px;
 }
 
 #filtres{
 	display: inline-block;
 	font-size: x-large;
-	margin: 25px 45px 0 0;
+	margin: 25px 45px 10px 0;
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
-	margin-bottom: 10px;
 }
 
 .checkbox{
@@ -166,11 +156,11 @@ input[type='submit']{
 }
 
 .switch{
-	border-radius: 60px;
-	display: inline-block;
 	height: 60px;
+	display: inline-block;
 	position: relative; 
 	margin: 10px 10px;
+	border-radius: 60px;
 	box-shadow: 0px 0px 7px grey;
 }
 
@@ -179,37 +169,35 @@ input[type='submit']{
 }
 
 .circle{
-	display: inline-block;
-	position: relative;
-	z-index:3;
+	width: 60px; height: 45px;
 	font-size: 30px;
 	padding-top: 15px;
 	text-align: center;
-	color: #0065fc;
-	background-color: #deebff;
-	height: 45px;
-	width: 60px;
+	display: inline-block;
+	position: relative;
 	border-radius: 30px;
+	background-color: #deebff;
+	color: #0065fc;
+	z-index:3;
 }
 	
 .text{
-	font-weight: bold;
-	font-size: large;
-	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	position: relative;
 	margin-right: 20px;
-	z-index: 2;
+	font-size: large;
+	font-family: raleway-gras, 'Arial black', Verdana, serif;
 	transition-duration: 0.2s;
+	z-index: 2;
 }
 
 .imblue{
-	position: absolute;
-	left: 0;
 	width: 60px; height: 60px;
+	left: 0;
+	position: absolute;
 	border-radius: 60px;
-	z-index: 1;
-	background-color: #0065fc;
 	transition-duration: 0.2s;
+	background-color: #0065fc;
+	z-index: 1;
 }
 
 input:hover + .switch .text{
@@ -241,48 +229,47 @@ form p{
 }
 
 .lieu {
-	display: flex;
-	margin-top: 40px;
-	justify-content: space-between;
 	width: 95%;
 	margin-left: 2.5%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
 }
 
 #hebergement{
-	background-color: #f2f2f2;
-	border-radius: 35px;
-	margin-right: 20px;
-	flex-direction: column;
 	width: 66%;
 	min-width: 700px;
-	padding: 50px 40px;
+	margin-right: 20px;
+	padding: 50px 40px ;
+	border-radius: 35px;
+	flex-direction: column;
+	background-color: #f2f2f2;
 }
 
-#chambre{
+#titreheberge{
+	margin-left: 10px;
+}
+
+#chambres{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-#titre{
-	margin-left: 10px;
-}
-
 .case a{
 	width: 300px; height: 250px;
-	border-radius: 35px; 
+	border-radius: 35px;
+	margin: 20px 10px;
+	padding: 10px 10px;
 	position: relative;
 	display: block;
-	padding: 10px 10px;
-	margin: 20px 10px;
 	box-shadow: 0px 0px 7px grey;
 	background-color: #ffffff;
 }
 
 .note{
-	display: flex;
-	flex-direction: column;
 	margin-left: 10px;
+	flex-direction: column;
 }
 
 .case h3,.case p{ 
@@ -301,6 +288,10 @@ figure{
 	border-radius: 25px 25px 0px 0px; 
 }
 
+.star{
+	margin-top: 20px;
+}
+
 .staryes{
 	color: #0065fc;
 	font-size: 17px;
@@ -312,26 +303,24 @@ figure{
 }
 
 #unpeuplus{
-
 	margin-left: 10px;
 }
 
 .pop{
-	background-color: #f2f2f2;
-	border-radius: 35px;
+	height: 800px;
 	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 800px;
+	border-radius: 35px;
+	background-color: #f2f2f2;
 }
 
-#popul{
+#lespopulaires{
+	width: 400px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
 	align-items: center;
-	height: 50px;
 }
 
 .fa-chart-line{
@@ -339,11 +328,10 @@ figure{
 }
 
 .pop .case a{
-	width: 400px;
-	height: 170px;
+	width: 400px; height: 170px;
+	margin: 20px;
 	display: flex;
 	align-items: center;
-	margin: 20px 20px;
 }
 
 .pop .pict {
@@ -356,91 +344,82 @@ figure{
 	width: 200px;
 }
 
-.star{
-	margin-top: 10px;
-}
-
 .pop .star{
 	margin-top: 60px;
 }
 
-#activites{ 
-	display: flex;
-	flex-direction:column;
+#activites{
 	width: 95%;
 	margin-left: 2.5%;
+	display: flex;
+	flex-direction: column;
 }
 
 #typeacti{
 	display: flex;
-	flex-direction: row;
-	height: auto;
-	justify-content: center;
 	flex-wrap: wrap;
-	align-items: flex-start;
 }
 
 #typeacti a{
+	margin: 10px;
 	overflow: hidden;
 	border-radius: 35px;
 	box-shadow: 0 0 7px grey;
-	margin: 10px;
 }
 
 .long{
-	flex-direction: row;
 	width: 50%;
 	min-width: 350px;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	display: flex;
 }
 
 .cote{
-	flex-direction:column;
-	flex-wrap: wrap;
-	display: flex;
 	width: auto;
-	justify-content: space-between;
 	min-width: 350px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.littlebox img{
+.littlebox .pict{
 	height: 110px; width: 350px;
 }
 
-.middlebox img{
+.middlebox .pict{
 	height: 190px; width: 350px;
 }
 
-.bigbox img{
+.bigbox .pict{
 	height: 400px; width: 350px;
 }
 
-.long .resume{
+.resume{
 	margin-left: 10px;
 }
 
 footer{
 	width: 100%;
-	left: 0px;
 	margin-top: 60px;
 	background-color: #f2f2f2;
+	padding-bottom: 50px;
 }
 
 #pieddepage{
-	display:flex;
-	flex-wrap: wrap;
-	width: 80%;	
+	width: 80%;
 	margin-left: 50px;
-	height: auto;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between; 
 }
 
 #pieddepage div{
-	flex-direction: column;
-	width: 350px;
+	width: 360px;
 	margin: 50px 0;
+	flex-direction: column;
 }
 
 div ul{
@@ -448,9 +427,9 @@ div ul{
 }
 
 div ul li{
-	list-style-type: none;
-	font-size: x-large;
 	margin-top: 20px;
+	font-size: x-large;
+	list-style-type: none;
 }
 
 /**** responsive de transition****/
@@ -461,38 +440,34 @@ div ul li{
 	}
 
 	.pop{
+		height: auto;
 		padding-bottom: 25px;
 		margin-bottom: 20px;
-		height: auto;
 	}
 
-	#beau{
-		flex-direction: row;
+	#chambrespop{
 		width: 920px;
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
 	#hebergement{
-		margin: 0px;
+		margin-right: 0;
 	}
 
-	#title{
+	#titreheberge{
+		margin-left: 0;
+		text-align: center;
+	}
+
+	#titreacti{
 		padding-left: 10%;
-	}
-
-	#titre{
-		text-align: center;
-		padding-right: 50px;
-	} 
-
-	#unpeuplus{
-		text-align: center;
 	}
 }
 
 @media screen and (max-width: 1090px){
-	#beau{
+	#chambrespop{
 		width: 780px;
 		align-items: center;
 		flex-direction: column;
@@ -501,32 +476,24 @@ div ul li{
 
 /****responsive format mobile****/
 @media screen and (max-width: 785px){
-	body{
-		width: 100%;
-	}
-
 	header{
+		width: 100%; height: 180px;
 		margin-left: 0;
-		height: 150px;
-		width: 100%;
 		flex-direction: column;
 	}
 
-	#tete img{
-		position: absolute;
+	#logo{
 		margin-left: 15px;
-		margin-top: 40px;
+		margin-top: 50px;
+		position: absolute;
 		top: 0;
 		left: 0;
 	}
 
 	#list{
+		width: 100%; height: 180px;
 		position: relative;
-		top: 0px;
-		flex-direction: column-reverse;
-		width: 100%; 
 		align-items: flex-end;
-		bottom: 100px;
 	}
 
 	#list div{
@@ -537,23 +504,16 @@ div ul li{
 		border-top: none;
 		height: 50px;
 		width: 50%;
+		border-bottom: 4px #f2f2f2 solid;
 	}
 
-	.inscrire{
+	#sinscrire{
 		width:auto;
 		height: 45px;
 		position: absolute;
-		bottom: 60px;
-		right: 20px;	
+		bottom: 70px;
+		right: 20px;
 		border: none;
-	}
-
-	.filtre{
-		flex-direction: column;
-	}
-
-	.heberge, .act{
-		border-bottom: 4px #f2f2f2 solid;
 	}
 
 	#list a:hover{
@@ -563,135 +523,104 @@ div ul li{
 	.heberge:hover, .act:hover{
 		border-bottom: 4px #0065fc solid;
 	}
-	
+
 	section h1, section p{
 		margin-left: 15px;
 		width: 85%;
 	}
 
+
 	input[type='submit']{
+		width: 70px; height: 70px;
+		left: 270px;
 		border-radius: 20px;
-		font-size: 0%;
-		width: 70px;
-		height: 70px;
+		font-size: 0;
 		opacity: 0;
 	}
 
 	.fa-search{
-		opacity: 1;
 		font-size: 20px;
 		padding: 25px;
 		border-radius:20px;
+		position: relative;
+		display: block;
 		background-color: #0065fc;
 		color: #ffffff;
-		left: 5px;
-		position: relative;
-
-		display: block;
+		opacity: 1;
+	}
+	#boiteabouton{
+		flex-direction: column;
 	}
 
-	.cherche{
-		margin-top: 40px;
+	#barrederecherche{
 		width: 340px;
-	}
-
-	.pop{
-		padding-bottom: 35px;
-		width: 100%;
-		border-radius: 0;
-	}
-
-	#popul{
-		margin-top: 20px;
-	}
-
-	#beau{
-		width:auto;
-	}
-
-	.pop .case a {
-		margin: 20px 0;
+		margin-top: 40px;
 	}
 
 	.lieu{
-		flex-direction: column-reverse;
-		align-items: center;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.pop{
+		width: 100%;
+		padding-bottom: 35px;
+		border-radius: 0;
+	}
+
+	#lespopulaires{
+		margin-top: 20px;
+	}
+
+	#chambrespop{
+		width:auto;
+	}
+
+	.pop .case a{
+		margin: 20px;
 	}
 
 	#hebergement{
 		width: auto;
-		min-width: 10px;
+		min-width: auto;
 		margin: 0px;
 		padding: 0px;
 		background-color:#ffffff;
-		justify-content: center;
 	}
 
-	#titre{
+	#titreheberge{
 		margin-top: 25px;
-		margin-bottom: -20px;
-	}
-
-	#chambre{
-		width: 100%;
-		justify-content: center;
+		margin-bottom: -10px;
+		padding-right: 100px;
 	}
 
 	#hebergement .case a{
-		display: block; 
-		width: 	auto;
-		margin: 0px;
-		box-shadow: 0px 0px 0px ;
+		width: auto;
+		margin: 10px;
+		display: block;
 	}
 
 	.pict{
 		width: 400px;
 	}
 
-	#title{
+	#unpeuplus{
+		text-align: center;
+		padding-right: 310px;
+	}
+
+	#titreacti{
 		text-align: center;
 		padding-left: 0px; 
 		padding-right: 125px;
-	}
-
-	#activites{
-		align-items: center;
-	}
-
-	 #typeacti{
-		width: auto;
-		height: auto;
-	}
-
-	#typeacti a{
-		margin: 0px;
-		margin-bottom: 30px;
 	}
 
 	.long{
 		width: auto;
 	}
 
-	.cote{
-		width: auto;
-	}
-
-	.littlebox img, .middlebox img, .bigbox img{
+	.littlebox .pict, .middlebox .pict, .bigbox .pict{
 		width: 400px;
 		height: 150px;
-	}
-
-	.resume{
-		margin-left: 20px;
-	}
-
-	footer{
-		display: block;
-		margin-top: 50px;
-	}
-
-	footer div{
-		width: 400px;
-		padding-bottom: 40px;
 	}
 }

@@ -60,7 +60,7 @@ header{
 	display: flex;
 }
 
-.heberge, .act, #sinscrire{
+#heberge, #act, #sinscrire{
 	width: 175px; height: 150px;
 	display: flex;
 	border-top: 4px #ffffff solid;
@@ -93,7 +93,7 @@ fieldset{
 }
 
 #barrederecherche{
-	width: 420px; height: 70px;
+	width: 450px; height: 70px;
 	display: flex;
 	position: relative;
 	border-radius: 20px;
@@ -107,7 +107,7 @@ fieldset{
 }
 
 input[type='search']{
-	width: 230px; height: 68px;
+	width: 190px; height: 68px;
 	font-weight: bold;
 	margin-top: 1px;
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
@@ -120,8 +120,6 @@ input[type='search'], input[type='submit']:focus{
 
 input[type='submit']{
 	width: 180px; height: 70px;
-	position: absolute;
-	left: 300px;
 	border: none;
 	border-radius: 0 20px 20px 0;
 	font-family: raleway-gras, 'Arial black', Verdana, serif;
@@ -131,6 +129,7 @@ input[type='submit']{
 }
 
 .fa-search{
+	position: absolute;
 	opacity: 0;
 }
 
@@ -228,7 +227,7 @@ form p{
 	color: #0065fc;
 }
 
-.lieu {
+#lieu {
 	width: 95%;
 	margin-left: 2.5%;
 	margin-top: 40px;
@@ -238,7 +237,7 @@ form p{
 
 #hebergement{
 	width: 66%;
-	min-width: 700px;
+	min-width: 680px;
 	margin-right: 20px;
 	padding: 50px 40px ;
 	border-radius: 35px;
@@ -256,13 +255,11 @@ form p{
 	justify-content: space-around;
 }
 
-.case a{
+.case{
 	width: 300px; height: 250px;
 	border-radius: 35px;
 	margin: 20px 10px;
-	padding: 10px 10px;
-	position: relative;
-	display: block;
+	padding: 10px;
 	box-shadow: 0px 0px 7px grey;
 	background-color: #ffffff;
 }
@@ -272,20 +269,19 @@ form p{
 	flex-direction: column;
 }
 
-.case h3,.case p{ 
-	margin: 5px 0;
-}
-
 figure{
-	display:inline;
-	margin: 0px;
+	margin: 0;
 }
 
 .pict{
 	width: 300px;
 	height: 150px;
 	object-fit: cover;
-	border-radius: 25px 25px 0px 0px; 
+	border-radius: 25px 25px 0 0; 
+}
+
+.case h3,.case p{ 
+	margin: 5px 0;
 }
 
 .star{
@@ -306,8 +302,8 @@ figure{
 	margin-left: 10px;
 }
 
-.pop{
-	height: 800px;
+#pop{
+	width: 450px; height: 800px; 
 	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
@@ -327,24 +323,23 @@ figure{
 	font-size: 25px;
 }
 
-.pop .case a{
+#pop .case{
 	width: 400px; height: 170px;
-	margin: 20px;
 	display: flex;
 	align-items: center;
 }
 
-.pop .pict {
-	width: 150px;height: 170px;
+#pop .pict {
+	width: 150px; height: 170px;
 	border-radius: 25px 0 0 25px;
 }
 
-.pop .note{
-	margin-left: 15px;
+#pop .note{
 	width: 200px;
+	margin-left: 15px;
 }
 
-.pop .star{
+#pop .star{
 	margin-top: 60px;
 }
 
@@ -358,13 +353,6 @@ figure{
 #typeacti{
 	display: flex;
 	flex-wrap: wrap;
-}
-
-#typeacti a{
-	margin: 10px;
-	overflow: hidden;
-	border-radius: 35px;
-	box-shadow: 0 0 7px grey;
 }
 
 .long{
@@ -383,6 +371,13 @@ figure{
 	flex-direction:column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+#typeacti a{
+	margin: 10px;
+	overflow: hidden;
+	border-radius: 35px;
+	box-shadow: 0 0 7px grey;
 }
 
 .littlebox .pict{
@@ -404,8 +399,8 @@ figure{
 footer{
 	width: 100%;
 	margin-top: 60px;
-	background-color: #f2f2f2;
 	padding-bottom: 50px;
+	background-color: #f2f2f2;
 }
 
 #pieddepage{
@@ -434,19 +429,18 @@ div ul li{
 
 /**** responsive de transition****/
 @media screen and (max-width: 1325px){
-	.lieu {
+	#lieu {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
 
-	.pop{
-		height: auto;
+	#pop{
+		width: 880px; height: auto;
 		padding-top: 0;
 		margin-bottom: 20px;
 	}
 
 	#chambrespop{
-		width: 920px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -467,8 +461,10 @@ div ul li{
 }
 
 @media screen and (max-width: 1090px){
+	#pop{
+		width: 760px;
+	}
 	#chambrespop{
-		width: 780px;
 		align-items: center;
 		flex-direction: column;
 	}
@@ -500,7 +496,7 @@ div ul li{
 		width: 100%;
 	}
 
-	.heberge, .act {
+	#heberge, #act {
 		border-top: none;
 		height: 50px;
 		width: 50%;
@@ -520,7 +516,7 @@ div ul li{
 		border-top: none;
 	}
 
-	.heberge:hover, .act:hover{
+	#heberge:hover, #act:hover{
 		border-bottom: 4px #0065fc solid;
 	}
 
@@ -529,13 +525,9 @@ div ul li{
 		width: 85%;
 	}
 
-
-	input[type='submit']{
-		width: 70px; height: 70px;
-		left: 270px;
-		border-radius: 20px;
-		font-size: 0;
-		opacity: 0;
+	#barrederecherche{
+		width: 320px;
+		margin-top: 40px;
 	}
 
 	.fa-search{
@@ -548,21 +540,26 @@ div ul li{
 		color: #ffffff;
 		opacity: 1;
 	}
+
+	input[type='submit']{
+		width: 70px; height: 70px;
+		position: absolute;
+		left: 250px;
+		border-radius: 20px;
+		font-size: 0;
+		opacity: 0;
+	}
+
 	#boiteabouton{
 		flex-direction: column;
 	}
 
-	#barrederecherche{
-		width: 340px;
-		margin-top: 40px;
-	}
-
-	.lieu{
+	#lieu{
 		margin-left: 0;
 		width: 100%;
 	}
 
-	.pop{
+	#pop{
 		width: 100%;
 		border-radius: 0;
 	}
@@ -575,7 +572,7 @@ div ul li{
 		width:auto;
 	}
 
-	.pop .case a{
+	#pop .case{
 		margin: 20px;
 	}
 
@@ -593,7 +590,7 @@ div ul li{
 		padding-right: 100px;
 	}
 
-	#hebergement .case a{
+	#hebergement .case{
 		width: auto;
 		margin: 10px;
 		display: block;

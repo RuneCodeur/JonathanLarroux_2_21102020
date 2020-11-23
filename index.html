@@ -15,8 +15,8 @@
 		<img src="image/logo.svg" id="logo" alt="Reservia"/>
 		<nav id="list">
 			<div>
-				<a href="#hebergement" class="heberge">Hébergements</a>
-				<a href="#activites" class="act">Activités</a>
+				<a href="#hebergement" id="heberge">Hébergements</a>
+				<a href="#activites" id="act">Activités</a>
 			</div>
 			<a href ="index.html" id="sinscrire">S'inscrire</a>
 		</nav>
@@ -27,7 +27,6 @@
 	<p>En plein centre ville ou en pleine nature</p>
 	<form action="traitement.php" method="post">
 		<fieldset>
-		<div>
 			<div id="barrederecherche">
 				<i class="fas fa-map-marker-alt"></i>
 				<input id="vacance" type="search" name="adresse" value="Marseille, France">
@@ -72,17 +71,16 @@
 					</label>
 				</div>
 			</div>
-		</div>
 		</fieldset>
 		<p><a href="index.html"><i class="fas fa-info"></i></a>Plus de 500 logements sont disponibles dans cette ville</p>
 	</form>
 </section>
 
-<div class="lieu">
+<div id="lieu">
 	<section id="hebergement">
 		<div id="titreheberge"><h2>Hébergement à marseille</h2></div>
 		<div id="chambres">
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure><img class="pict" src="image/small/cannebiere.jpg" alt="Auberge la Cannebière"/>
 				</figure>
 				<div class="note">
@@ -96,9 +94,9 @@
 						<i class="fas fa-star starno"></i>
 					</div>
 				</div>
-			</a></div>
+			</a>
 
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure>
 					<img class="pict" src="image/small/port.jpg" alt="Hôtel du port"/>
 				</figure>
@@ -113,9 +111,9 @@
 						<i class="fas fa-star staryes"></i>
 					</div>
 				</div>
-			</a></div>
+			</a>
 
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure>
 					<img class="pict" src="image/small/mouette.jpg" alt="Hôtel Les mouettes"/>
 				</figure>
@@ -130,9 +128,9 @@
 						<i class="fas fa-star starno"></i>
 					</div>
 				</div>
-			</a></div>
+			</a>
 
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure>
 					<img class="pict" src="image/small/hotel_mer.jpg" alt="Hôtel de la mer"/>
 				</figure>
@@ -147,9 +145,9 @@
 						<i class="fas fa-star starno"></i>
 					</div>
 				</div>
-			</a></div>
+			</a>
 
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure>
 					<img class="pict" src="image/small/panier.jpg" alt="Auberge Le Panier"/>
 				</figure>
@@ -164,9 +162,9 @@
 						<i class="fas fa-star starno"></i>
 					</div>
 				</div>
-			</a></div>
+			</a>
 
-			<div class="case"><a href ="index.html">
+			<a href ="index.html" class="case">
 				<figure>
 					<img class="pict" src="image/small/amina.jpg" alt="Hôtel chez Amina"/>
 				</figure>
@@ -181,17 +179,18 @@
 						<i class="fas fa-star staryes"></i>
 					</div>
 				</div>
-			</a></div></div>
-			<div id="unpeuplus"><a href ="index.html"><h3>Afficher plus</h3></a></div>
+			</a>
+		</div>
+		<div id="unpeuplus"><a href ="index.html"><h3>Afficher plus</h3></a></div>
 	</section>
 
 
 
-	<section class="pop">
+	<section id="pop">
 		<div id="lespopulaires"><h2>Les plus populaires</h2>
 		<a href ="index.html"><i class="fas fa-chart-line"></i></a></div>
 		<div id="chambrespop">
-		<div class="case"><a href ="index.html">
+		<a href ="index.html" class="case">
 			<figure>
 				<img class="pict" src="image/small/soleil_matin.jpg" alt="Hôtel Le soleil du matin"/>
 			</figure>
@@ -206,10 +205,10 @@
 					<i class="fas fa-star staryes"></i>
 				</div>
 			</div>
-		</a></div>
+		</a>
 
 
-		<div class="case"><a href ="index.html">
+		<a href ="index.html" class="case">
 			<figure>
 				<img class="pict" src="image/small/au_coeur_de_leau.jpg" alt="Au coeur de l'eau Chambre d'hôtes"/>
 			</figure>
@@ -224,9 +223,9 @@
 					<i class="fas fa-star starno"></i>
 				</div>
 			</div>
-		</a></div>
+		</a>
 
-		<div class="case"><a href ="index.html">
+		<a href ="index.html" class="case">
 			<figure>
 				<img class="pict" src="image/small/bleu_blanc.jpg" alt="Hôtel Tout bleu et Blanc"/>
 			</figure>
@@ -241,7 +240,7 @@
 					<i class="fas fa-star starno"></i>
 				</div>
 			</div>
-		</a></div>
+		</a>
 	</div>
 	</section>
 </div>

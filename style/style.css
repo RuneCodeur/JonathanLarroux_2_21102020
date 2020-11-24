@@ -92,7 +92,7 @@ fieldset{
 }
 
 #barrederecherche{
-	width: 450px; height: 70px;
+	width: 400px; height: 70px;
 	display: flex;
 	position: relative;
 	border-radius: 20px;

@@ -1,3 +1,5 @@
+le site peut être visionné directement en suivant le lien suivant : https://rackhamledev.github.io/JonathanLarroux_2_21102020/
+
 projet 2 openclassrooms : transformer une maquette en site web
 
 le site est construit avec le langage HTML et CSS et ne necessite aucun procédé particuler pour son lancement.
